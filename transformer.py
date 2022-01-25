@@ -1,4 +1,3 @@
-from threading import local
 import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
@@ -8,7 +7,6 @@ from torch import Tensor
 from torchvision.transforms import Compose, Resize, ToTensor
 from einops import rearrange, reduce, repeat
 from einops.layers.torch import Rearrange, Reduce
-from losses import GANLoss
 
 x = torch.randn(8, 1, 256, 256)
 
@@ -23,9 +21,10 @@ class PatchEmbedding(nn.Module):
             # using a conv layer instead of a linear one -> performance gains
             # nn.Conv2d(in_channels, emb_size, kernel_size=patch_size, stride=patch_size),
             # Rearrange('b e (h) (w) -> b (h w) e'),
-            nn.Conv2d(in_channels, 32, kernel_size=4, stride=4),
+            nn.Conv2d(in_channels, 32, kernel_size=1, stride=1),
+            nn.Conv2d(32, 32, kernel_size=4, stride=4),
             nn.Conv2d(32, 64, kernel_size=4, stride=4),
-            nn.Conv2d(64, 768, kernel_size=2, stride=2),  ## output 8*8 patch
+            nn.Conv2d(64, 512, kernel_size=2, stride=2),  ## output 8*8 patch
             Rearrange('b e (h) (w) -> b (h w) e'),
         )
         # self.cls_token = nn.Parameter(torch.randn(1,1, emb_size))
@@ -184,104 +183,51 @@ class ClassificationHead(nn.Sequential):
 #                 in_channels: int = 1,
 #                 patch_size: int = 16,
 #                 emb_size: int = 768,
-#                 img_size: int = 256,from losses import GANLoss
+#                 img_size: int = 256,
+#                 depth: int = 12,
+#                 n_classes: int = 2,
+#                 **kwargs):
 #         super().__init__(
 #             PatchEmbedding(in_channels, patch_size, emb_size, img_size),
 #             TransformerEncoder(depth, emb_size=emb_size, **kwargs),
 #             ClassificationHead(emb_size, n_classes)
 #         )
 
-# class AdversarialNetwork(nn.Module):
-#     def __init__(self, in_feature):
-#         super(AdversarialNetwork, self).__init__()
-#         self.ad_layer1 = nn.Linear(in_feature, 1024)
-#         self.ad_layer2 = nn.Linear(1024, 1024)
-#         self.ad_layer3 = nn.Linear(1024, 1)
-#         self.ad_layer1.weight.data.normal_(0, 0.01)
-#         self.ad_layer2.weight.data.normal_(0, 0.01)
-#         self.ad_layer3.weight.data.normal_(0, 0.3)
-#         self.ad_layer1.bias.data.fill_(0.0)
-#         self.ad_layer2.bias.data.fill_(0.0)
-#         self.ad_layer3.bias.data.fill_(0.0)
-#         self.relu1 = nn.LeakyReLU()
-#         self.relu2 = nn.LeakyReLU()
-#         self.dropout1 = nn.Dropout(0.5)
-#         self.dropout2 = nn.Dropout(0.5)
-#         # self.sigmoid = nn.Sigmoid()
-
-#     def forward(self, x):
-#         # print(x.size())
-#         x = self.ad_layer1(x)
-#         x = self.relu1(x)
-#         x = self.dropout1(x)
-#         x = self.ad_layer2(x)
-#         x = self.relu2(x)
-#         x = self.dropout2(x)
-#         x = self.ad_layer3(x)
-#         # x = self.sigmoid(x)
-#         return x
-
 class AdversarialNetwork(nn.Module):
     def __init__(self, in_feature):
         super(AdversarialNetwork, self).__init__()
-        eps = 0.001
-        norm_layer=nn.InstanceNorm2d
-        self.sequence = nn.Sequential(
-            # using a conv layer instead of a linear one -> performance gains
-            # nn.Conv2d(in_channels, emb_size, kernel_size=patch_size, stride=patch_size),
-            # Rearrange('b e (h) (w) -> b (h w) e'),
-            nn.Conv2d(in_feature, 64, kernel_size=4, stride=2), nn.LeakyReLU(0.2, True),
-            nn.Conv2d(64, 256, kernel_size=4, stride=2), norm_layer(256, affine=True, eps=eps), nn.LeakyReLU(0.2, True),
-            nn.Conv2d(256, 1, kernel_size=2, stride=1),  ## output 6*6 map
-            # Rearrange('b e (h) (w) -> b (h w) e'),
-        )
+        self.ad_layer1 = nn.Linear(in_feature, 1024)
+        self.ad_layer2 = nn.Linear(1024, 1024)
+        self.ad_layer3 = nn.Linear(1024, 1)
+        self.ad_layer1.weight.data.normal_(0, 0.01)
+        self.ad_layer2.weight.data.normal_(0, 0.01)
+        self.ad_layer3.weight.data.normal_(0, 0.3)
+        self.ad_layer1.bias.data.fill_(0.0)
+        self.ad_layer2.bias.data.fill_(0.0)
+        self.ad_layer3.bias.data.fill_(0.0)
+        self.relu1 = nn.LeakyReLU()
+        self.relu2 = nn.LeakyReLU()
+        self.dropout1 = nn.Dropout(0.5)
+        self.dropout2 = nn.Dropout(0.5)
+        # self.sigmoid = nn.Sigmoid()
 
     def forward(self, x):
         # print(x.size())
-        x = self.sequence(x)
+        x = self.ad_layer1(x)
+        x = self.relu1(x)
+        x = self.dropout1(x)
+        x = self.ad_layer2(x)
+        x = self.relu2(x)
+        x = self.dropout2(x)
+        x = self.ad_layer3(x)
         # x = self.sigmoid(x)
         return x
-
-
-class DomainClassifier(nn.Module):
-    def __init__(self):
-        super(DomainClassifier, self).__init__()
-        self.ad_list = nn.ModuleList([AdversarialNetwork(1) for i in range(64)]) ##### v2
-        self.ganloss = GANLoss().cuda()
-
-    def forward(self, x, maps):
-        b,c, _, _ = x.size()
-        maps = maps.view(b,c,-1).unsqueeze(-1).unsqueeze(-1)
-        x=x.view(b,c,32,-1)  # b,c,32 ,256*8
-        patches = []
-        losses = []
-        for patch_id in range(64):
-            patches += [x[:,:,:, patch_id*32:(patch_id+1)*32]]  # b,c,32,32
-            patch = x[:,:,:, patch_id*32:(patch_id+1)*32]  # b,c,32,32
-            pred = self.ad_list[patch_id](patch)  ## 6*6 output map
-
-            
-
-            # print(pred.size())
-            # print(maps[:,:,patch_id].size())
-            # localmap = maps[:,:,patch_id]  #.unsqueeze(-1).unsqueeze(-1)
-            # print(localmap.size())
-            # print(localmap.repeat(1,1,5,5).size())
-            # print(self.ganloss(pred,maps[:,:,patch_id].repeat(1,1,5,5)).view(8,1,-1).mean(-1))
-            losses.append(self.ganloss(pred,maps[:,:,patch_id].repeat(1,1,5,5)).view(8,1,-1).mean(-1))  #b,1,1,1
-
-        local_loss = torch.stack(losses).view(b,c,8,8)
-        # print(local_loss.size())
-        return local_loss
-
-        
-
 
 class ViT(nn.Module):
     def __init__(self,     
                 in_channels: int = 1,
                 patch_size: int = 32,
-                emb_size: int = 768,
+                emb_size: int = 512,
                 img_size: int = 256,
                 depth: int = 3,
                 n_classes: int = 1,
