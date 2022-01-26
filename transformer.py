@@ -19,13 +19,13 @@ class PatchEmbedding(nn.Module):
         super().__init__()
         self.projection = nn.Sequential(
             # using a conv layer instead of a linear one -> performance gains
-            # nn.Conv2d(in_channels, emb_size, kernel_size=patch_size, stride=patch_size),
-            # Rearrange('b e (h) (w) -> b (h w) e'),
-            nn.Conv2d(in_channels, 32, kernel_size=1, stride=1),
-            nn.Conv2d(32, 32, kernel_size=4, stride=4),
-            nn.Conv2d(32, 64, kernel_size=4, stride=4),
-            nn.Conv2d(64, 512, kernel_size=2, stride=2),  ## output 8*8 patch
+            nn.Conv2d(in_channels, emb_size, kernel_size=patch_size, stride=patch_size),
             Rearrange('b e (h) (w) -> b (h w) e'),
+            # nn.Conv2d(in_channels, 32, kernel_size=1, stride=1),
+            # nn.Conv2d(32, 32, kernel_size=4, stride=4),
+            # nn.Conv2d(32, 64, kernel_size=4, stride=4),
+            # nn.Conv2d(64, 512, kernel_size=2, stride=2),  ## output 8*8 patch
+            # Rearrange('b e (h) (w) -> b (h w) e'),
         )
         # self.cls_token = nn.Parameter(torch.randn(1,1, emb_size))
         self.positions = nn.Parameter(torch.randn((img_size // patch_size) **2, emb_size))
@@ -42,7 +42,7 @@ class PatchEmbedding(nn.Module):
         patches = x
         # print(x.size())
         x += self.positions
-        return x, patches
+        return x#, patches
 
 class MultiHeadAttention(nn.Module):
     def __init__(self, emb_size: int = 768, num_heads: int = 8, dropout: float = 0, vis=False):
@@ -164,6 +164,7 @@ class TransformerEncoder(nn.Module):
         self.last_layer = TransformerEncoderBlock(vis = True, **kwargs)
         # super().__init__(*[TransformerEncoderBlock(**kwargs) for _ in range(depth)])
     def forward(self, x):
+        # print(x.size())
         x = self.sequence(x)
         x = self.last_layer(x)
         self.attn = self.last_layer.attn
@@ -173,10 +174,12 @@ class TransformerEncoder(nn.Module):
 class ClassificationHead(nn.Sequential):
     def __init__(self, emb_size: int = 768, n_classes: int = 2):
         super().__init__(
-            Reduce('b n e -> b e', reduction='mean'),
+            # Reduce('b n e -> b e', reduction='mean'),
             nn.LayerNorm(emb_size), 
-            nn.Linear(emb_size, n_classes*4),  ## hidden layer
-            nn.Linear(n_classes*4, n_classes))
+            nn.Linear(emb_size, 256),  ## hidden layer
+            nn.Linear(256, 1),  ## hidden layer
+            Rearrange('b (h w) c -> b c h w', h = 8)
+        )
 
 # class ViT(nn.Sequential):
 #     def __init__(self,     
@@ -235,35 +238,33 @@ class ViT(nn.Module):
         super().__init__()
         self.patchembedding = PatchEmbedding(in_channels, patch_size, emb_size, img_size)
 
-        self.ad_list = nn.ModuleList([AdversarialNetwork(emb_size) for i in range(64)]) ##### v2
+        # self.ad_list = nn.ModuleList([AdversarialNetwork(emb_size) for i in range(64)]) ##### v2
 
         # self.ad_list = []
         # for ad_num in range(64):
         #     self.ad_list.append(AdversarialNetwork(emb_size).cuda())
-        # self.transformer = TransformerEncoder(depth, emb_size=emb_size, **kwargs)
-        # self.classifier = ClassificationHead(emb_size, n_classes)
+        self.transformer = TransformerEncoder(depth, emb_size=emb_size, **kwargs)
+        self.classifier = ClassificationHead(emb_size, n_classes)
     def forward(self, x):
-        x, patches = self.patchembedding(x)  ### x: 8*8 patch
-        b,c,_=x.size()
+        # x, patches = self.patchembedding(x)  ### x: 8*8 patch
+        # b,c,_=x.size()
 
-        local_output_list=[]
+        x = self.patchembedding(x)
+        x = self.transformer(x)
+        x = self.classifier(x)
 
-        for ad_num, ad_net in enumerate(self.ad_list):           ########## v2
-            local_output = ad_net(x[:,ad_num,:])  ## b,c,1
-            # print(local_output.size())
-            local_output_list.append(local_output)
+        return x
 
-        # for ad_num in range(len(self.ad_list)):
-        #     # print(self.ad_list[ad_num].is_cuda)
-        #     # print(next(self.ad_list[ad_num].parameters()).is_cuda)
-        #     local_output = self.ad_list[ad_num](x[:,ad_num,:])  ## b,c,1
-        #     # print(local_output.size())
+        # local_output_list=[]
+
+        # for ad_num, ad_net in enumerate(self.ad_list):           ########## v2
+        #     local_output = ad_net(x[:,ad_num,:])  ## b,c,1
+
         #     local_output_list.append(local_output)
-        local_output = torch.cat(local_output_list, dim=1).view(b,1,8,8)   #b,c,64
-        # x = self.transformer(x) #[:,1:,:]
-        # self.attn = self.transformer.attn
-        # x = rearrange(x, "b (h n) d -> b d h n", h=8)
-        return local_output
+
+        # local_output = torch.cat(local_output_list, dim=1).view(b,1,8,8)   #b,c,64
+
+        # return local_output
 
 # patches_embedded = PatchEmbedding()(x)
 # print(TransformerEncoderBlock()(patches_embedded).shape)
