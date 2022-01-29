@@ -211,7 +211,7 @@ class NLayerDc(nn.Module):
         self.dilated = nn.Sequential(nn.Conv2d(ndf * nf_mult, ndf * nf_mult, kernel_size=3, stride=1, padding=padw, dilation=2, bias = use_bias),
                                      norm_layer(ndf * nf_mult, affine=True, eps=eps),nn.LeakyReLU(0.2, True),
                                      )
-        self.lastconv = nn.Conv2d(ndf * nf_mult, 1, kernel_size=3, stride=1, padding=padw, dilation=2, bias = use_bias)
+        self.lastconv = nn.Conv2d(ndf * nf_mult, 1, kernel_size=3, stride=1, padding=1, bias = use_bias)
         # self.model = nn.Sequential(*sequence)
         self.debug = nn.Sequential(*sequence)
 
@@ -221,15 +221,16 @@ class NLayerDc(nn.Module):
         #     print("debug")
         #     return self.debug(input)
         x = self.model(input)
-        lam = self.dis_out(x)
-        b,_,_,_ = lam.size()
-        lam = torch.mean(lam.view(b,-1), -1, keepdim=True)
+        # lam = self.dis_out(x)
+        # b,_,_,_ = lam.size()
+        # lam = torch.mean(lam.view(b,-1), -1, keepdim=True)
         # print(lam.size(), 'lam')
         # print(x.size(),'before down sample')
 
         x = self.downsample(x)
         # print(x.size(),'after down sample')
         x = x + self.dilated(x)
+        # print(x.size(), 'x')
         x = self.lastconv(x)
         # print(x.size(), 'x')
-        return x, lam
+        return x #, lam
