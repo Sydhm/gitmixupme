@@ -224,7 +224,7 @@ class SIFA_pytorch(nn.Module):
         m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         # print(pred_mixed_m.size())
         local_loss = self.criterionGAN(pred_mixed_m, self.bit_mask88)
-        g_a_ganloss_m = (local_loss*self.bit_mask88).sum()/self.bit_mask88.sum() + self.criterionGAN(m, m_gt).mean()
+        g_a_ganloss_m = local_loss.mean() + self.criterionGAN(m, m_gt).mean()
         # print(g_a_ganloss_m.size())
         pred_mixed_notm, notm = self.netD_B_aux(self.real_A*self.bit_mask + self.fake_B*(1 -self.bit_mask))  ### (m)real A + (1-m)fake B
         notm_gt = torch.mean((1-self.bit_mask88).reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
@@ -258,6 +258,7 @@ class SIFA_pytorch(nn.Module):
         local_loss = self.criterionGAN(pred_mixed_notm, 1-self.bit_mask88)
         g_b_ganloss_notm = (local_loss*self.bit_mask88).sum()/self.bit_mask88.sum() +self.criterionGAN(notm, notm_gt).mean()
         g_b_ganloss += (g_b_ganloss_m + g_b_ganloss_notm)*0.1
+
 
         gb_loss = cycle_loss_a + cycle_loss_b + g_b_ganloss
         self.fake_A_temp = self.fake_image_pool(self.num_fake_inputs, self.fake_A.detach(), self.fake_images_A)
@@ -640,7 +641,8 @@ class SIFA_pytorch(nn.Module):
                             rgb_pred = rgb_pred = decode_segmap(prediction[image_i])
                             pic = [(self.real_A[image_i].repeat(3,1,1)+1)/2, (self.fake_B[image_i].repeat(3,1,1)+1)/2,
                                     rgb_pred, rgb_gt,
-                                    (self.bit_mask[image_i].repeat(3,1,1)+1)/2, (torch.nn.functional.interpolate(self.bit_mask_pred, [model.IMG_HEIGHT, model.IMG_WIDTH], mode='area')[image_i].repeat(3,1,1)+1)/2] # C=3, H, W
+                                    (self.bit_mask[image_i].repeat(3,1,1)+1)/2, (torch.nn.functional.interpolate(self.bit_mask_pred, [model.IMG_HEIGHT, model.IMG_WIDTH], mode='area')[image_i].repeat(3,1,1)+1)/2,
+                                    (self.real_B[image_i].repeat(3,1,1)+1)/2] # C=3, H, W
                             rows.append(torch.cat(pic, 2)) # C=3, H, W*4
 
                         pic = torch.cat(rows, 1)  # C=3, H*4, W*4
