@@ -178,7 +178,7 @@ class ClassificationHead(nn.Sequential):
             nn.LayerNorm(emb_size), 
             nn.Linear(emb_size, 256),  ## hidden layer
             nn.Linear(256, 1),  ## hidden layer
-            Rearrange('b (h w) c -> b c h w', h = 8)
+            Rearrange('b (h w) c -> b c h w', h = 16)
         )
 
 # class ViT(nn.Sequential):
@@ -229,10 +229,10 @@ class AdversarialNetwork(nn.Module):
 class ViT(nn.Module):
     def __init__(self,     
                 in_channels: int = 1,
-                patch_size: int = 32,
+                patch_size: int = 16,
                 emb_size: int = 512,
                 img_size: int = 256,
-                depth: int = 3,
+                depth: int = 6,
                 n_classes: int = 1,
                 **kwargs):
         super().__init__()
@@ -252,6 +252,8 @@ class ViT(nn.Module):
         x = self.patchembedding(x)
         x = self.transformer(x)
         x = self.classifier(x)
+        x = torch.nn.AvgPool2d(kernel_size=2, stride=2)(x)  # 8*8
+        # print(x.size())
 
         return x
 

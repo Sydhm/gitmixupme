@@ -253,7 +253,7 @@ if __name__ == '__main__':
     with open('config_param.json') as config_file:
         config = json.load(config_file)
 
-    folder_name = 'patch_ad'
+    folder_name = 'transformer12layers'
 
     with open('./output/'+folder_name+'/checkpoint_names', 'r') as fd:
         list = fd.readlines()
