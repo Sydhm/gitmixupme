@@ -221,9 +221,9 @@ class NLayerDc(nn.Module):
         #     print("debug")
         #     return self.debug(input)
         x = self.model(input)
-        lam = self.dis_out(x)
-        b,_,_,_ = lam.size()
-        lam = torch.mean(lam.view(b,-1), -1, keepdim=True)
+        # lam = self.dis_out(x)
+        # b,_,_,_ = lam.size()
+        # lam = torch.mean(lam.view(b,-1), -1, keepdim=True)
         # print(lam.size(), 'lam')
         # print(x.size(),'before down sample')
 
@@ -233,4 +233,4 @@ class NLayerDc(nn.Module):
         # print(x.size(), 'x')
         x = self.lastconv(x)
         # print(x.size(), 'x')
-        return x, lam
+        return x #, lam
