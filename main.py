@@ -81,7 +81,7 @@ class SIFA_pytorch(nn.Module):
         init_weights(self.netD_A.cuda(), init_gain=0.02)
         self.netD_B = model.NLayerDiscriminator()
         init_weights(self.netD_B.cuda(), init_gain=0.02)
-        self.netD_B_aux = ViT()
+        self.netD_B_aux = NLayerDc()
         init_weights(self.netD_B_aux.cuda(), init_gain=0.01)
         self.netD_P = model.NLayerDiscriminator(input_nc=5)   #### channels = 5
         init_weights(self.netD_P.cuda(), init_gain=0.02)
@@ -225,12 +225,12 @@ class SIFA_pytorch(nn.Module):
         # m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         # print(pred_mixed_m.size())
         local_loss = self.criterionGAN(pred_mixed_m, self.bit_mask88)
-        g_a_ganloss_m = (local_loss*(self.bit_mask88)).sum()/(self.bit_mask88).sum() # + self.criterionGAN(m, m_gt).mean()
+        g_a_ganloss_m = local_loss.mean() #+ self.criterionGAN(m, m_gt).mean()
         # print(g_a_ganloss_m.size())
         pred_mixed_notm = self.netD_B_aux(self.real_A*self.bit_mask + self.fake_B*(1 -self.bit_mask))  ### (m)real A + (1-m)fake B
         # notm_gt = torch.mean((1-self.bit_mask88).reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         local_loss = self.criterionGAN(pred_mixed_notm, 1-self.bit_mask88)
-        g_a_ganloss_notm = (local_loss*(1 -self.bit_mask88)).sum()/(1 -self.bit_mask88).sum() #+ self.criterionGAN(notm, notm_gt).mean()
+        g_a_ganloss_notm = local_loss.mean() #+ self.criterionGAN(notm, notm_gt).mean()
         # print(self.criterionGAN(notm, 1-self.bit_mask88.sum()/64).size())
         g_a_ganloss += (g_a_ganloss_m + g_a_ganloss_notm)*0.1
 
@@ -252,12 +252,12 @@ class SIFA_pytorch(nn.Module):
         # m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         # print(m_gt.size(), 'm gt size')
         local_loss = self.criterionGAN(pred_mixed_m, self.bit_mask88)
-        g_b_ganloss_m = (local_loss*(1-self.bit_mask88)).sum()/(1-self.bit_mask88).sum() #+self.criterionGAN(m, m_gt).mean()
+        g_b_ganloss_m = local_loss.mean() #+self.criterionGAN(m, m_gt).mean()
         ###### PSEUDO ------------------      A: 0,     fake A: assgined 0*     (weight)1
         pred_mixed_notm = self.netD_B_aux(self.real_B*(1-self.bit_mask) + self.fake_A*self.bit_mask)  ### (m)real A + (1-m)fake B
         # notm_gt = torch.mean((1-self.bit_mask88).reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         local_loss = self.criterionGAN(pred_mixed_notm, 1-self.bit_mask88)
-        g_b_ganloss_notm = (local_loss*self.bit_mask88).sum()/self.bit_mask88.sum() #+self.criterionGAN(notm, notm_gt).mean()
+        g_b_ganloss_notm = local_loss.mean() #+self.criterionGAN(notm, notm_gt).mean()
         g_b_ganloss += (g_b_ganloss_m + g_b_ganloss_notm)*0.1
 
 
@@ -304,8 +304,8 @@ class SIFA_pytorch(nn.Module):
         fake_loss = self.criterionGAN(pred_false, False).mean() #+ self.criterionGAN(f, False).mean()
 
         pred_m = self.netD_B_aux(self.real_B*self.bit_mask+(1-self.bit_mask)*self.real_A)
-        # m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)
-        m_loss = self.criterionGAN(pred_m, self.bit_mask88).mean() # + self.criterionGAN(m, m_gt).mean()
+        m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)
+        m_loss = self.criterionGAN(pred_m, self.bit_mask88).mean() #+ self.criterionGAN(m, m_gt).mean()
 
         # pred_notm = self.netD_B_aux(self.real_A*self.bit_mask+(1-self.bit_mask)*self.real_B)
         # # m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)
