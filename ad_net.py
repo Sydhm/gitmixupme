@@ -1,4 +1,3 @@
-from telnetlib import X3PAD
 import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
@@ -200,7 +199,7 @@ class NLayerDc(nn.Module):
             nn.LeakyReLU(0.2, True)
         ]
         self.model = nn.Sequential(*sequence)
-        # self.dis_out = nn.Conv2d(ndf * 4, 1, kernel_size=kw, stride=1, padding=padw, bias = use_bias)  # output 1 channel prediction map
+        self.dis_out = nn.Conv2d(ndf * 4, 1, kernel_size=kw, stride=1, padding=padw, bias = use_bias)  # output 1 channel prediction map
         self.downsample = nn.Sequential(nn.Conv2d(ndf * 4, ndf * nf_mult, kernel_size=kw, stride=2, padding=1, bias = use_bias),
                                          norm_layer(ndf * nf_mult, affine=True, eps=eps),
                                          nn.LeakyReLU(0.2, True),
@@ -221,9 +220,9 @@ class NLayerDc(nn.Module):
         #     print("debug")
         #     return self.debug(input)
         x = self.model(input)
-        # lam = self.dis_out(x)
-        # b,_,_,_ = lam.size()
-        # lam = torch.mean(lam.view(b,-1), -1, keepdim=True)
+        lam = self.dis_out(x)
+        b,_,_,_ = lam.size()
+        lam = torch.mean(lam.view(b,-1), -1, keepdim=True)
         # print(lam.size(), 'lam')
         # print(x.size(),'before down sample')
 
@@ -233,4 +232,4 @@ class NLayerDc(nn.Module):
         # print(x.size(), 'x')
         x = self.lastconv(x)
         # print(x.size(), 'x')
-        return x#, lam
+        return x, lam
