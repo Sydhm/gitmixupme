@@ -32,8 +32,6 @@ class SIFA_pytorch(nn.Module):
         # self._source_train_pth = config['source_train_pth']
         # self._target_train_pth = config['target_train_pth']
         self._train_pth = config['_train_pth']
-        self._source_val_pth = config['source_val_pth']
-        self._target_val_pth = config['target_val_pth']
         self._output_root_dir = config['output_root_dir']
         if not os.path.isdir(self._output_root_dir):
             os.makedirs(self._output_root_dir)
@@ -59,7 +57,7 @@ class SIFA_pytorch(nn.Module):
             (self._pool_size, self._batch_size, 1,  model.IMG_HEIGHT, model.IMG_WIDTH), device=torch.device('cuda'))
 
 
-        self.direction = 'CT2MR'
+        self.direction = 'MR2CT'
         self.save_interval = 300
         self.print_freq = self.save_interval
         super(SIFA_pytorch, self).__init__()
@@ -565,8 +563,8 @@ class SIFA_pytorch(nn.Module):
         )
     
         ################## test files direction keys
-        source = ['ct', 'CT']
-        target = ['mr', 'MR']
+        target = ['ct', 'CT']
+        source = ['mr', 'MR']
         ################## test files
         source_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +source[0]+ '.txt'
         source_test_list = read_lists(source_txt_path)
