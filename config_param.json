@@ -1,5 +1,5 @@
 {
-  "_train_pth": "./dataset/newtrain",
+  "_train_pth": "./dataset/new_train",
   "output_root_dir": "./output",
   "pool_size": 50,
   "_LAMBDA_A": 10,
