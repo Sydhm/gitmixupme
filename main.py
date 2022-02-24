@@ -566,9 +566,9 @@ class SIFA_pytorch(nn.Module):
         target = ['ct', 'CT']
         source = ['mr', 'MR']
         ################## test files
-        source_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +source[0]+ '.txt'
+        source_txt_path = './data/datalist/test_' +source[0]+ '.txt'
         source_test_list = read_lists(source_txt_path)
-        target_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +target[0]+ '.txt'
+        target_txt_path = './data/datalist/test_' +target[0]+ '.txt'
         target_test_list = read_lists(target_txt_path)
         data_size = [1, 256, 256]
         label_size = [1, 256, 256]

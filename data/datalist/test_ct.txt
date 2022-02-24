@@ -1,0 +1,4 @@
+/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/ct/ct_1019.npz
+/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/ct/ct_1014.npz
+/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/ct/ct_1008.npz
+/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/ct/ct_1003.npz
