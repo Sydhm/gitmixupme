@@ -253,7 +253,7 @@ if __name__ == '__main__':
     with open('config_param.json') as config_file:
         config = json.load(config_file)
 
-    folder_name = 'transformer12layers'
+    folder_name = '20220206-111333'
 
     with open('./output/'+folder_name+'/checkpoint_names', 'r') as fd:
         list = fd.readlines()

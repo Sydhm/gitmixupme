@@ -59,7 +59,7 @@ class SIFA_pytorch(nn.Module):
             (self._pool_size, self._batch_size, 1,  model.IMG_HEIGHT, model.IMG_WIDTH), device=torch.device('cuda'))
 
 
-        self.direction = 'MR2CT'
+        self.direction = 'CT2MR'
         self.save_interval = 300
         self.print_freq = self.save_interval
         super(SIFA_pytorch, self).__init__()
@@ -565,8 +565,8 @@ class SIFA_pytorch(nn.Module):
         )
     
         ################## test files direction keys
-        target = ['ct', 'CT']
-        source = ['mr', 'MR']
+        source = ['ct', 'CT']
+        target = ['mr', 'MR']
         ################## test files
         source_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +source[0]+ '.txt'
         source_test_list = read_lists(source_txt_path)
