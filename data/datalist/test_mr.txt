@@ -1,4 +1,4 @@
-/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/mr/mr_1019.npz
-/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/mr/mr_1018.npz
-/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/mr/mr_1009.npz
-/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/test_image&labels/mr/mr_1007.npz
+./dataset/test_sifa/mr/mr_1019.npz
+./dataset/test_sifa/mr/mr_1018.npz
+./dataset/test_sifa/mr/mr_1009.npz
+./dataset/test_sifa/mr/mr_1007.npz
