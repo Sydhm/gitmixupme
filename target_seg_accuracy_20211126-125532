@@ -1,0 +1,2322 @@
+./output/patch_ad/iter_299.ckpt
+mask dice: 0.312130
+assd dice: 15.913762
+./output/patch_ad/iter_599.ckpt
+mask dice: 0.281032
+assd dice: 14.106229
+./output/patch_ad/iter_899.ckpt
+mask dice: 0.429380
+assd dice: 9.591418
+./output/patch_ad/iter_1199.ckpt
+mask dice: 0.495386
+assd dice: 11.754027
+./output/patch_ad/iter_1499.ckpt
+mask dice: 0.524885
+assd dice: 10.016847
+./output/patch_ad/iter_1799.ckpt
+mask dice: 0.572953
+assd dice: 5.106701
+./output/patch_ad/iter_2099.ckpt
+mask dice: 0.545558
+assd dice: 5.981275
+./output/patch_ad/iter_2399.ckpt
+mask dice: 0.633903
+assd dice: 5.883170
+./output/patch_ad/iter_2699.ckpt
+mask dice: 0.594835
+assd dice: 6.282737
+./output/patch_ad/iter_2999.ckpt
+mask dice: 0.641361
+assd dice: 5.422498
+./output/patch_ad/iter_3299.ckpt
+mask dice: 0.608132
+assd dice: 6.129800
+./output/patch_ad/iter_3599.ckpt
+mask dice: 0.588067
+assd dice: 6.341587
+./output/patch_ad/iter_3899.ckpt
+mask dice: 0.374972
+assd dice: 8.685257
+./output/patch_ad/iter_4199.ckpt
+mask dice: 0.568129
+assd dice: 4.909408
+./output/patch_ad/iter_4499.ckpt
+mask dice: 0.615291
+assd dice: 7.425003
+./output/patch_ad/iter_4799.ckpt
+mask dice: 0.605416
+assd dice: 5.679810
+./output/patch_ad/iter_5099.ckpt
+mask dice: 0.465608
+assd dice: 7.697623
+./output/patch_ad/iter_5399.ckpt
+mask dice: 0.461546
+assd dice: 6.444413
+./output/patch_ad/iter_5699.ckpt
+mask dice: 0.465898
+assd dice: 8.089511
+./output/patch_ad/iter_5999.ckpt
+mask dice: 0.537905
+assd dice: 6.357370
+./output/patch_ad/iter_6299.ckpt
+mask dice: 0.479689
+assd dice: 5.973888
+./output/patch_ad/iter_6599.ckpt
+mask dice: 0.515251
+assd dice: 5.898026
+./output/patch_ad/iter_6899.ckpt
+mask dice: 0.575463
+assd dice: 6.202212
+./output/patch_ad/iter_7199.ckpt
+mask dice: 0.542867
+assd dice: 6.648413
+./output/patch_ad/iter_7499.ckpt
+mask dice: 0.416845
+assd dice: 11.109944
+./output/patch_ad/iter_7799.ckpt
+mask dice: 0.496740
+assd dice: 6.023634
+./output/patch_ad/iter_8099.ckpt
+mask dice: 0.578705
+assd dice: 5.479421
+./output/patch_ad/iter_8399.ckpt
+mask dice: 0.571117
+assd dice: 6.665237
+./output/patch_ad/iter_8699.ckpt
+mask dice: 0.519456
+assd dice: 6.887152
+./output/patch_ad/iter_8999.ckpt
+mask dice: 0.581162
+assd dice: 5.113371
+./output/patch_ad/iter_9299.ckpt
+mask dice: 0.577273
+assd dice: 6.903314
+./output/patch_ad/iter_9599.ckpt
+mask dice: 0.522077
+assd dice: 5.791053
+./output/patch_ad/iter_9899.ckpt
+mask dice: 0.476595
+assd dice: 10.755073
+./output/patch_ad/iter_10199.ckpt
+mask dice: 0.489261
+assd dice: 10.647498
+./output/patch_ad/iter_10499.ckpt
+mask dice: 0.512298
+assd dice: 5.771427
+./output/patch_ad/iter_10799.ckpt
+mask dice: 0.513621
+assd dice: 6.249901
+./output/patch_ad/iter_11099.ckpt
+mask dice: 0.515511
+assd dice: 9.921886
+./output/patch_ad/iter_11399.ckpt
+mask dice: 0.416146
+assd dice: 11.071533
+./output/patch_ad/iter_11699.ckpt
+mask dice: 0.489945
+assd dice: 6.196095
+./output/patch_ad/iter_11999.ckpt
+mask dice: 0.503753
+assd dice: 6.125921
+./output/patch_ad/iter_12299.ckpt
+mask dice: 0.497750
+assd dice: 6.068180
+./output/patch_ad/iter_12599.ckpt
+mask dice: 0.518984
+assd dice: 5.812719
+./output/patch_ad/iter_12899.ckpt
+mask dice: 0.410331
+assd dice: 11.330410
+./output/patch_ad/iter_13199.ckpt
+mask dice: 0.477959
+assd dice: 6.586882
+./output/patch_ad/iter_13499.ckpt
+mask dice: 0.488795
+assd dice: 6.155695
+./output/patch_ad/iter_13799.ckpt
+mask dice: 0.503137
+assd dice: 5.952074
+./output/patch_ad/iter_14099.ckpt
+mask dice: 0.224076
+assd dice: 25.487543
+./output/patch_ad/iter_14399.ckpt
+mask dice: 0.486839
+assd dice: 7.523802
+./output/patch_ad/iter_14699.ckpt
+mask dice: 0.467888
+assd dice: 6.635311
+./output/patch_ad/iter_14999.ckpt
+mask dice: 0.174940
+assd dice: 31.037312
+./output/patch_ad/iter_15299.ckpt
+mask dice: 0.380337
+assd dice: 11.140279
+./output/patch_ad/iter_15599.ckpt
+mask dice: 0.411516
+assd dice: 11.015763
+./output/patch_ad/iter_15899.ckpt
+mask dice: 0.362672
+assd dice: 16.618183
+./output/patch_ad/iter_16199.ckpt
+mask dice: 0.450152
+assd dice: 7.630061
+./output/patch_ad/iter_16499.ckpt
+mask dice: 0.374559
+assd dice: 11.651420
+./output/patch_ad/iter_16799.ckpt
+mask dice: 0.466940
+assd dice: 8.600557
+./output/patch_ad/iter_17099.ckpt
+mask dice: 0.341736
+assd dice: 10.564148
+./output/patch_ad/iter_17399.ckpt
+mask dice: 0.407437
+assd dice: 12.088443
+./output/patch_ad/iter_17699.ckpt
+mask dice: 0.544021
+assd dice: 5.697130
+./output/patch_ad/iter_17999.ckpt
+mask dice: 0.475292
+assd dice: 6.628246
+./output/transformer3layer/iter_299.ckpt
+mask dice: 0.206636
+assd dice: 16.996291
+./output/transformer3layer/iter_599.ckpt
+mask dice: 0.145373
+assd dice: 22.503314
+./output/transformer3layer/iter_899.ckpt
+mask dice: 0.454502
+assd dice: 10.534217
+./output/transformer3layer/iter_1199.ckpt
+mask dice: 0.428118
+assd dice: 10.715382
+./output/transformer3layer/iter_1499.ckpt
+mask dice: 0.261904
+assd dice: 11.230670
+./output/transformer3layer/iter_1799.ckpt
+mask dice: 0.141264
+assd dice: 35.106034
+./output/transformer3layer/iter_2099.ckpt
+mask dice: 0.448934
+assd dice: 6.374033
+./output/transformer3layer/iter_2399.ckpt
+mask dice: 0.210648
+assd dice: 19.313270
+./output/transformer3layer/iter_2699.ckpt
+mask dice: 0.498370
+assd dice: 10.322199
+./output/transformer3layer/iter_2999.ckpt
+mask dice: 0.313083
+assd dice: 16.544184
+./output/transformer3layer/iter_3299.ckpt
+mask dice: 0.107606
+assd dice: 16.859302
+./output/transformer3layer/iter_3599.ckpt
+mask dice: 0.048608
+assd dice: 29.187784
+./output/transformer3layer/iter_3899.ckpt
+mask dice: 0.455036
+assd dice: 8.963511
+./output/transformer3layer/iter_4199.ckpt
+mask dice: 0.402249
+assd dice: 7.938593
+./output/transformer3layer/iter_4499.ckpt
+mask dice: 0.294228
+assd dice: 18.019810
+./output/transformer3layer/iter_4799.ckpt
+mask dice: 0.450282
+assd dice: 9.755443
+./output/transformer3layer/iter_5099.ckpt
+mask dice: 0.455349
+assd dice: 7.967830
+./output/transformer3layer/iter_5399.ckpt
+mask dice: 0.491438
+assd dice: 7.707541
+./output/transformer3layer/iter_5699.ckpt
+mask dice: 0.410392
+assd dice: 8.297204
+./output/transformer3layer/iter_5999.ckpt
+mask dice: 0.472461
+assd dice: 8.747848
+./output/transformer3layer/iter_6299.ckpt
+mask dice: 0.536129
+assd dice: 7.337432
+./output/transformer3layer/iter_6599.ckpt
+mask dice: 0.497188
+assd dice: 11.901385
+./output/transformer3layer/iter_6899.ckpt
+mask dice: 0.406516
+assd dice: 7.206349
+./output/transformer3layer/iter_7199.ckpt
+mask dice: 0.502329
+assd dice: 6.313946
+./output/transformer3layer/iter_7499.ckpt
+mask dice: 0.404738
+assd dice: 9.066943
+./output/transformer3layer/iter_7799.ckpt
+mask dice: 0.253545
+assd dice: 18.314639
+./output/transformer3layer/iter_8099.ckpt
+mask dice: 0.552132
+assd dice: 8.429890
+./output/transformer3layer/iter_8399.ckpt
+mask dice: 0.533701
+assd dice: 5.828388
+./output/transformer3layer/iter_8699.ckpt
+mask dice: 0.162027
+assd dice: 32.382177
+./output/transformer3layer/iter_8999.ckpt
+mask dice: 0.501686
+assd dice: 7.058962
+./output/transformer3layer/iter_9299.ckpt
+mask dice: 0.276005
+assd dice: 21.089715
+./output/transformer3layer/iter_9599.ckpt
+mask dice: 0.358874
+assd dice: 16.389782
+./output/transformer3layer/iter_9899.ckpt
+mask dice: 0.479191
+assd dice: 6.889911
+./output/transformer3layer/iter_10199.ckpt
+mask dice: 0.521571
+assd dice: 5.888228
+./output/transformer3layer/iter_10499.ckpt
+mask dice: 0.430435
+assd dice: 10.859894
+./output/transformer3layer/iter_10799.ckpt
+mask dice: 0.518748
+assd dice: 6.009572
+./output/transformer3layer/iter_11099.ckpt
+mask dice: 0.557627
+assd dice: 5.865982
+./output/transformer3layer/iter_11399.ckpt
+mask dice: 0.418199
+assd dice: 10.976922
+./output/transformer3layer/iter_11699.ckpt
+mask dice: 0.495130
+assd dice: 6.541485
+./output/transformer3layer/iter_11999.ckpt
+mask dice: 0.398260
+assd dice: 6.794653
+./output/transformer3layer/iter_12299.ckpt
+mask dice: 0.454007
+assd dice: 6.044861
+./output/transformer3layer/iter_12599.ckpt
+mask dice: 0.451314
+assd dice: 7.232452
+./output/transformer3layer/iter_12899.ckpt
+mask dice: 0.281366
+assd dice: 16.746647
+./output/transformer3layer/iter_13199.ckpt
+mask dice: 0.474153
+assd dice: 6.752020
+./output/transformer3layer/iter_13499.ckpt
+mask dice: 0.460731
+assd dice: 11.652555
+./output/transformer3layer/iter_13799.ckpt
+mask dice: 0.396872
+assd dice: 7.518303
+./output/transformer3layer/iter_14099.ckpt
+mask dice: 0.491523
+assd dice: 10.057823
+./output/transformer3layer/iter_14399.ckpt
+mask dice: 0.588482
+assd dice: 5.520359
+./output/transformer3layer/iter_14699.ckpt
+mask dice: 0.378694
+assd dice: 15.896216
+./output/transformer3layer/iter_14999.ckpt
+mask dice: 0.573525
+assd dice: 5.927240
+./output/transformer3layer/iter_15299.ckpt
+mask dice: 0.630097
+assd dice: 5.668702
+./output/transformer3layer/iter_15599.ckpt
+mask dice: 0.539774
+assd dice: 6.049874
+./output/transformer3layer/iter_15899.ckpt
+mask dice: 0.536756
+assd dice: 5.750233
+./output/transformer3layer/iter_16199.ckpt
+mask dice: 0.322549
+assd dice: 20.612449
+./output/transformer3layer/iter_16499.ckpt
+mask dice: 0.376952
+assd dice: 16.475286
+./output/transformer3layer/iter_16799.ckpt
+mask dice: 0.502778
+assd dice: 5.964447
+./output/transformer3layer/iter_17099.ckpt
+mask dice: 0.463687
+assd dice: 10.253713
+./output/transformer6layer/iter_299.ckpt
+mask dice: 0.242275
+assd dice: 16.193731
+./output/transformer6layer/iter_599.ckpt
+mask dice: 0.289848
+assd dice: 13.391074
+./output/transformer6layer/iter_899.ckpt
+mask dice: 0.279334
+assd dice: 12.432058
+./output/transformer6layer/iter_1199.ckpt
+mask dice: 0.358589
+assd dice: 11.922161
+./output/transformer6layer/iter_1499.ckpt
+mask dice: 0.292218
+assd dice: 10.272126
+./output/transformer6layer/iter_1799.ckpt
+mask dice: 0.532743
+assd dice: 9.810727
+./output/transformer6layer/iter_2099.ckpt
+mask dice: 0.582552
+assd dice: 7.355991
+./output/transformer6layer/iter_2399.ckpt
+mask dice: 0.411768
+assd dice: 12.175143
+./output/transformer6layer/iter_2699.ckpt
+mask dice: 0.470807
+assd dice: 8.170122
+./output/transformer6layer/iter_2999.ckpt
+mask dice: 0.447335
+assd dice: 7.430604
+./output/transformer6layer/iter_3299.ckpt
+mask dice: 0.466036
+assd dice: 8.187557
+./output/transformer6layer/iter_3599.ckpt
+mask dice: 0.570499
+assd dice: 5.665374
+./output/transformer6layer/iter_3899.ckpt
+mask dice: 0.523606
+assd dice: 6.347123
+./output/transformer6layer/iter_4199.ckpt
+mask dice: 0.470370
+assd dice: 7.626526
+./output/transformer6layer/iter_4499.ckpt
+mask dice: 0.563662
+assd dice: 6.009070
+./output/transformer6layer/iter_4799.ckpt
+mask dice: 0.596026
+assd dice: 6.600432
+./output/transformer6layer/iter_5099.ckpt
+mask dice: 0.419813
+assd dice: 8.996934
+./output/transformer6layer/iter_5399.ckpt
+mask dice: 0.544626
+assd dice: 10.431665
+./output/transformer6layer/iter_5699.ckpt
+mask dice: 0.333563
+assd dice: 11.453911
+./output/transformer6layer/iter_5999.ckpt
+mask dice: 0.471035
+assd dice: 8.597570
+./output/transformer6layer/iter_6299.ckpt
+mask dice: 0.482429
+assd dice: 6.909599
+./output/transformer6layer/iter_6599.ckpt
+mask dice: 0.528860
+assd dice: 5.384563
+./output/transformer6layer/iter_6899.ckpt
+mask dice: 0.389407
+assd dice: 7.174004
+./output/transformer6layer/iter_7199.ckpt
+mask dice: 0.489125
+assd dice: 6.509064
+./output/transformer6layer/iter_7499.ckpt
+mask dice: 0.537437
+assd dice: 7.159825
+./output/transformer6layer/iter_7799.ckpt
+mask dice: 0.520109
+assd dice: 5.431234
+./output/transformer6layer/iter_8099.ckpt
+mask dice: 0.541750
+assd dice: 6.802841
+./output/transformer6layer/iter_8399.ckpt
+mask dice: 0.294923
+assd dice: 14.506254
+./output/transformer6layer/iter_8699.ckpt
+mask dice: 0.463433
+assd dice: 6.448703
+./output/transformer6layer/iter_8999.ckpt
+mask dice: 0.495642
+assd dice: 5.904821
+./output/transformer6layer/iter_9299.ckpt
+mask dice: 0.542978
+assd dice: 6.231748
+./output/transformer6layer/iter_9599.ckpt
+mask dice: 0.383377
+assd dice: 11.547326
+./output/transformer6layer/iter_9899.ckpt
+mask dice: 0.613733
+assd dice: 5.227454
+./output/transformer6layer/iter_10199.ckpt
+mask dice: 0.340066
+assd dice: 14.302062
+./output/transformer6layer/iter_10499.ckpt
+mask dice: 0.421322
+assd dice: 8.782866
+./output/transformer6layer/iter_10799.ckpt
+mask dice: 0.490881
+assd dice: 6.929299
+./output/transformer6layer/iter_11099.ckpt
+mask dice: 0.408878
+assd dice: 10.391188
+./output/transformer6layer/iter_11399.ckpt
+mask dice: 0.583133
+assd dice: 5.292840
+./output/transformer6layer/iter_11699.ckpt
+mask dice: 0.439095
+assd dice: 7.239778
+./output/transformer6layer/iter_11999.ckpt
+mask dice: 0.426078
+assd dice: 12.555589
+./output/transformer6layer/iter_12299.ckpt
+mask dice: 0.481157
+assd dice: 8.723924
+./output/transformer6layer/iter_12599.ckpt
+mask dice: 0.536617
+assd dice: 5.708233
+./output/transformer6layer/iter_12899.ckpt
+mask dice: 0.554641
+assd dice: 5.508431
+./output/transformer6layer/iter_13199.ckpt
+mask dice: 0.373204
+assd dice: 11.572633
+./output/transformer6layer/iter_13499.ckpt
+mask dice: 0.444330
+assd dice: 7.002266
+./output/transformer6layer/iter_13799.ckpt
+mask dice: 0.362967
+assd dice: 12.054441
+./output/transformer6layer/iter_14099.ckpt
+mask dice: 0.434092
+assd dice: 10.083128
+./output/transformer6layer/iter_14399.ckpt
+mask dice: 0.408382
+assd dice: 10.625149
+./output/transformer6layer/iter_14699.ckpt
+mask dice: 0.481973
+assd dice: 10.221773
+./output/transformer6layer/iter_14999.ckpt
+mask dice: 0.552014
+assd dice: 5.724218
+./output/transformer6layer/iter_15299.ckpt
+mask dice: 0.496931
+assd dice: 9.695660
+./output/transformer6layer/iter_15599.ckpt
+mask dice: 0.318982
+assd dice: 19.413134
+./output/transformer6layer/iter_15899.ckpt
+mask dice: 0.528452
+assd dice: 9.675498
+./output/20220127-143437/iter_299.ckpt
+mask dice: 0.223275
+assd dice: 20.506848
+./output/20220127-143437/iter_599.ckpt
+mask dice: 0.280446
+assd dice: 22.512245
+./output/20220127-143437/iter_899.ckpt
+mask dice: 0.243237
+assd dice: 18.953037
+./output/20220127-143437/iter_1199.ckpt
+mask dice: 0.225086
+assd dice: 11.128581
+./output/20220127-143437/iter_1499.ckpt
+mask dice: 0.200330
+assd dice: 25.408715
+./output/20220127-143437/iter_1799.ckpt
+mask dice: 0.513028
+assd dice: 9.976566
+./output/20220127-143437/iter_2099.ckpt
+mask dice: 0.456850
+assd dice: 11.062588
+./output/20220127-143437/iter_2399.ckpt
+mask dice: 0.586187
+assd dice: 7.414934
+./output/20220127-143437/iter_2699.ckpt
+mask dice: 0.409299
+assd dice: 9.800766
+./output/20220127-143437/iter_2999.ckpt
+mask dice: 0.431655
+assd dice: 6.501780
+./output/20220127-143437/iter_3299.ckpt
+mask dice: 0.259738
+assd dice: 15.401570
+./output/20220127-143437/iter_3599.ckpt
+mask dice: 0.442674
+assd dice: 6.684689
+./output/patch&stitchDC_v2/iter_299.ckpt
+mask dice: 0.134868
+assd dice: 18.979575
+./output/patch&stitchDC_v2/iter_599.ckpt
+mask dice: 0.117213
+assd dice: 23.673235
+./output/patch&stitchDC_v2/iter_899.ckpt
+mask dice: 0.345872
+assd dice: 12.744011
+./output/patch&stitchDC_v2/iter_1199.ckpt
+mask dice: 0.473260
+assd dice: 8.953025
+./output/patch&stitchDC_v2/iter_1499.ckpt
+mask dice: 0.368948
+assd dice: 12.120158
+./output/patch&stitchDC_v2/iter_1799.ckpt
+mask dice: 0.435154
+assd dice: 10.231321
+./output/patch&stitchDC_v2/iter_2099.ckpt
+mask dice: 0.372975
+assd dice: 12.622959
+./output/patch&stitchDC_v2/iter_2399.ckpt
+mask dice: 0.575557
+assd dice: 6.645887
+./output/patch&stitchDC_v2/iter_2699.ckpt
+mask dice: 0.594639
+assd dice: 6.683791
+./output/patch&stitchDC_v2/iter_2999.ckpt
+mask dice: 0.354029
+assd dice: 9.677976
+./output/patch&stitchDC_v2/iter_3299.ckpt
+mask dice: 0.531966
+assd dice: 7.101162
+./output/patch&stitchDC_v2/iter_3599.ckpt
+mask dice: 0.442516
+assd dice: 11.112257
+./output/patch&stitchDC_v2/iter_3899.ckpt
+mask dice: 0.491177
+assd dice: 6.233455
+./output/patch&stitchDC_v2/iter_4199.ckpt
+mask dice: 0.478361
+assd dice: 5.888909
+./output/patch&stitchDC_v2/iter_4499.ckpt
+mask dice: 0.527556
+assd dice: 7.706878
+./output/patch&stitchDC_v2/iter_4799.ckpt
+mask dice: 0.451637
+assd dice: 6.233307
+./output/patch&stitchDC_v2/iter_5099.ckpt
+mask dice: 0.441682
+assd dice: 10.557168
+./output/patch&stitchDC_v2/iter_5399.ckpt
+mask dice: 0.471772
+assd dice: 7.906209
+./output/patch&stitchDC_v2/iter_5699.ckpt
+mask dice: 0.565493
+assd dice: 5.620546
+./output/patch&stitchDC_v2/iter_5999.ckpt
+mask dice: 0.406776
+assd dice: 11.691943
+./output/patch&stitchDC_v2/iter_6299.ckpt
+mask dice: 0.613308
+assd dice: 5.283193
+./output/patch&stitchDC_v2/iter_6599.ckpt
+mask dice: 0.427679
+assd dice: 10.677163
+./output/patch&stitchDC_v2/iter_6899.ckpt
+mask dice: 0.454688
+assd dice: 6.912214
+./output/patch&stitchDC_v2/iter_7199.ckpt
+mask dice: 0.422009
+assd dice: 10.923435
+./output/patch&stitchDC_v2/iter_7499.ckpt
+mask dice: 0.564043
+assd dice: 7.038534
+./output/patch&stitchDC_v2/iter_7799.ckpt
+mask dice: 0.568857
+assd dice: 5.960902
+./output/patch&stitchDC_v2/iter_8099.ckpt
+mask dice: 0.572039
+assd dice: 6.883655
+./output/patch&stitchDC_v2/iter_8399.ckpt
+mask dice: 0.568403
+assd dice: 6.600004
+./output/patch&stitchDC_v2/iter_8699.ckpt
+mask dice: 0.561912
+assd dice: 10.070259
+./output/patch&stitchDC_v2/iter_8999.ckpt
+mask dice: 0.472204
+assd dice: 11.832069
+./output/patch&stitchDC_v2/iter_9299.ckpt
+mask dice: 0.484710
+assd dice: 11.237274
+./output/patch&stitchDC_v2/iter_9599.ckpt
+mask dice: 0.524517
+assd dice: 5.875076
+./output/patch&stitchDC_v2/iter_9899.ckpt
+mask dice: 0.527074
+assd dice: 11.240916
+./output/patch&stitchDC_v2/iter_10199.ckpt
+mask dice: 0.590427
+assd dice: 5.821333
+./output/patch&stitchDC_v2/iter_10499.ckpt
+mask dice: 0.513215
+assd dice: 10.097350
+./output/patch&stitchDC_v2/iter_10799.ckpt
+mask dice: 0.477511
+assd dice: 10.191948
+./output/patch&stitchDC_v2/iter_11099.ckpt
+mask dice: 0.535680
+assd dice: 7.073055
+./output/patch&stitchDC_v2/iter_11399.ckpt
+mask dice: 0.415810
+assd dice: 10.617893
+./output/patch&stitchDC_v2/iter_11699.ckpt
+mask dice: 0.608055
+assd dice: 6.334325
+./output/patch&stitchDC_v2/iter_11999.ckpt
+mask dice: 0.508170
+assd dice: 6.525098
+./output/patch&stitchDC_v2/iter_12299.ckpt
+mask dice: 0.418551
+assd dice: 6.876875
+./output/patch&stitchDC_v2/iter_12599.ckpt
+mask dice: 0.281298
+assd dice: 24.044294
+./output/patch&stitchDC_v2/iter_12899.ckpt
+mask dice: 0.462430
+assd dice: 6.593899
+./output/patch&stitchDC_v2/iter_13199.ckpt
+mask dice: 0.628358
+assd dice: 5.535666
+./output/patch&stitchDC_v2/iter_13499.ckpt
+mask dice: 0.548897
+assd dice: 5.494790
+./output/patch&stitchDC_v2/iter_13799.ckpt
+mask dice: 0.310409
+assd dice: 20.481273
+./output/patch&stitchDC_v2/iter_14099.ckpt
+mask dice: 0.445139
+assd dice: 15.019267
+./output/patch&stitchDC_v2/iter_14399.ckpt
+mask dice: 0.586682
+assd dice: 5.253008
+./output/patch&stitchDC_v2/iter_14699.ckpt
+mask dice: 0.543200
+assd dice: 10.496113
+./output/patch&stitchDC_v2/iter_14999.ckpt
+mask dice: 0.447814
+assd dice: 14.930288
+./output/patch&stitchDC_v2/iter_15299.ckpt
+mask dice: 0.522233
+assd dice: 5.845207
+./output/patch&stitchDC_v2/iter_15599.ckpt
+mask dice: 0.347034
+assd dice: 7.594252
+./output/patch&stitchDC_v2/iter_15899.ckpt
+mask dice: 0.610121
+assd dice: 4.949726
+./output/patch&stitchDC_v2/iter_16199.ckpt
+mask dice: 0.580625
+assd dice: 7.151667
+./output/patch&stitchDC_v2/iter_16499.ckpt
+mask dice: 0.450631
+assd dice: 9.915735
+./output/patch&stitchDC_v2/iter_16799.ckpt
+mask dice: 0.548115
+assd dice: 5.474405
+./output/patch&stitchDC_v2/iter_17099.ckpt
+mask dice: 0.444486
+assd dice: 14.920361
+./output/patch&stitchDC_v2/iter_17399.ckpt
+mask dice: 0.459194
+assd dice: 11.520789
+./output/transformer16patch/iter_299.ckpt
+mask dice: 0.224286
+assd dice: 26.791466
+./output/transformer16patch/iter_599.ckpt
+mask dice: 0.216603
+assd dice: 18.057430
+./output/transformer16patch/iter_899.ckpt
+mask dice: 0.424707
+assd dice: 11.697987
+./output/transformer16patch/iter_1199.ckpt
+mask dice: 0.317156
+assd dice: 15.126082
+./output/transformer16patch/iter_1499.ckpt
+mask dice: 0.188871
+assd dice: 22.706439
+./output/transformer16patch/iter_1799.ckpt
+mask dice: 0.377497
+assd dice: 13.625059
+./output/transformer16patch/iter_2099.ckpt
+mask dice: 0.438439
+assd dice: 11.353095
+./output/transformer16patch/iter_2399.ckpt
+mask dice: 0.495816
+assd dice: 7.344081
+./output/transformer16patch/iter_2699.ckpt
+mask dice: 0.173857
+assd dice: 23.329547
+./output/transformer16patch/iter_2999.ckpt
+mask dice: 0.464893
+assd dice: 6.946330
+./output/transformer16patch/iter_3299.ckpt
+mask dice: 0.522665
+assd dice: 6.360737
+./output/transformer16patch/iter_3599.ckpt
+mask dice: 0.360752
+assd dice: 14.346147
+./output/transformer16patch/iter_3899.ckpt
+mask dice: 0.400310
+assd dice: 11.386062
+./output/transformer16patch/iter_4199.ckpt
+mask dice: 0.476536
+assd dice: 6.275942
+./output/transformer16patch/iter_4499.ckpt
+mask dice: 0.593868
+assd dice: 5.599858
+./output/transformer16patch/iter_4799.ckpt
+mask dice: 0.603330
+assd dice: 6.597253
+./output/transformer16patch/iter_5099.ckpt
+mask dice: 0.465398
+assd dice: 6.342999
+./output/transformer16patch/iter_5399.ckpt
+mask dice: 0.349924
+assd dice: 11.664761
+./output/transformer16patch/iter_5699.ckpt
+mask dice: 0.608470
+assd dice: 7.101275
+./output/transformer16patch/iter_5999.ckpt
+mask dice: 0.490551
+assd dice: 6.822148
+./output/transformer16patch/iter_6299.ckpt
+mask dice: 0.390403
+assd dice: 11.083470
+./output/transformer16patch/iter_6599.ckpt
+mask dice: 0.529363
+assd dice: 7.531029
+./output/transformer16patch/iter_6899.ckpt
+mask dice: 0.485698
+assd dice: 7.240244
+./output/transformer16patch/iter_7199.ckpt
+mask dice: 0.435998
+assd dice: 12.206198
+./output/transformer16patch/iter_7499.ckpt
+mask dice: 0.485862
+assd dice: 10.374047
+./output/transformer16patch/iter_7799.ckpt
+mask dice: 0.491357
+assd dice: 6.191392
+./output/transformer16patch/iter_8099.ckpt
+mask dice: 0.551319
+assd dice: 6.058845
+./output/transformer16patch/iter_8399.ckpt
+mask dice: 0.577705
+assd dice: 6.170891
+./output/transformer16patch/iter_8699.ckpt
+mask dice: 0.498502
+assd dice: 8.407183
+./output/transformer16patch/iter_8999.ckpt
+mask dice: 0.615309
+assd dice: 5.694309
+./output/transformer16patch/iter_9299.ckpt
+mask dice: 0.422856
+assd dice: 16.826715
+./output/transformer16patch/iter_9599.ckpt
+mask dice: 0.516352
+assd dice: 8.809764
+./output/transformer16patch/iter_9899.ckpt
+mask dice: 0.463403
+assd dice: 11.029421
+./output/transformer16patch/iter_10199.ckpt
+mask dice: 0.454794
+assd dice: 6.121085
+./output/transformer16patch/iter_10499.ckpt
+mask dice: 0.448204
+assd dice: 6.382912
+./output/transformer16patch/iter_10799.ckpt
+mask dice: 0.611206
+assd dice: 6.580344
+./output/transformer16patch/iter_11099.ckpt
+mask dice: 0.540914
+assd dice: 7.704998
+./output/transformer16patch/iter_11399.ckpt
+mask dice: 0.540810
+assd dice: 8.143606
+./output/transformer16patch/iter_11699.ckpt
+mask dice: 0.578599
+assd dice: 7.545862
+./output/transformer16patch/iter_11999.ckpt
+mask dice: 0.486533
+assd dice: 6.435319
+./output/transformer16patch/iter_12299.ckpt
+mask dice: 0.474678
+assd dice: 10.766109
+./output/fcndc/iter_899.ckpt
+mask dice: 0.316226
+assd dice: 13.366832
+./output/fcndc/iter_1199.ckpt
+mask dice: 0.477067
+assd dice: 8.091317
+./output/fcndc/iter_1499.ckpt
+mask dice: 0.509695
+assd dice: 7.119370
+./output/fcndc/iter_1799.ckpt
+mask dice: 0.459789
+assd dice: 6.811820
+./output/fcndc/iter_2099.ckpt
+mask dice: 0.520465
+assd dice: 6.331837
+./output/fcndc/iter_2399.ckpt
+mask dice: 0.407693
+assd dice: 6.910926
+./output/fcndc/iter_2699.ckpt
+mask dice: 0.349471
+assd dice: 11.807532
+./output/fcndc/iter_2999.ckpt
+mask dice: 0.478672
+assd dice: 6.712636
+./output/fcndc/iter_3299.ckpt
+mask dice: 0.322453
+assd dice: 8.967129
+./output/fcndc/iter_3599.ckpt
+mask dice: 0.569589
+assd dice: 6.254903
+./output/fcndc/iter_3899.ckpt
+mask dice: 0.498375
+assd dice: 10.140209
+./output/fcndc/iter_4199.ckpt
+mask dice: 0.459812
+assd dice: 9.807917
+./output/fcndc/iter_4499.ckpt
+mask dice: 0.271615
+assd dice: 17.840469
+./output/fcndc/iter_4799.ckpt
+mask dice: 0.297596
+assd dice: 14.508146
+./output/fcndc/iter_5099.ckpt
+mask dice: 0.429100
+assd dice: 15.116142
+./output/fcndc/iter_5399.ckpt
+mask dice: 0.348542
+assd dice: 8.195899
+./output/fcndc/iter_5699.ckpt
+mask dice: 0.461958
+assd dice: 10.656324
+./output/fcndc/iter_5999.ckpt
+mask dice: 0.312777
+assd dice: 9.685385
+./output/fcndc/iter_6299.ckpt
+mask dice: 0.496080
+assd dice: 9.190071
+./output/fcndc/iter_6599.ckpt
+mask dice: 0.597062
+assd dice: 5.496645
+./output/fcndc/iter_6899.ckpt
+mask dice: 0.619298
+assd dice: 5.441250
+./output/fcndc/iter_7199.ckpt
+mask dice: 0.392146
+assd dice: 11.484619
+./output/fcndc/iter_7499.ckpt
+mask dice: 0.492539
+assd dice: 11.952968
+./output/fcndc/iter_7799.ckpt
+mask dice: 0.442294
+assd dice: 6.424581
+./output/fcndc/iter_8099.ckpt
+mask dice: 0.362000
+assd dice: 7.402882
+./output/fcndc/iter_8399.ckpt
+mask dice: 0.510038
+assd dice: 10.252724
+./output/fcndc/iter_8699.ckpt
+mask dice: 0.353955
+assd dice: 11.599208
+./output/fcndc/iter_8999.ckpt
+mask dice: 0.280241
+assd dice: 7.746335
+./output/fcndc/iter_9299.ckpt
+mask dice: 0.473762
+assd dice: 9.810690
+./output/20220129-142743/iter_299.ckpt
+mask dice: 0.275664
+assd dice: 15.192494
+./output/20220129-142743/iter_599.ckpt
+mask dice: 0.351011
+assd dice: 10.766002
+./output/20220129-142743/iter_899.ckpt
+mask dice: 0.302973
+assd dice: 13.517432
+./output/20220129-142743/iter_1199.ckpt
+mask dice: 0.448848
+assd dice: 11.803276
+./output/20220129-142743/iter_1499.ckpt
+mask dice: 0.555278
+assd dice: 9.035446
+./output/20220129-142743/iter_1799.ckpt
+mask dice: 0.514525
+assd dice: 10.305084
+./output/20220129-142743/iter_2099.ckpt
+mask dice: 0.501968
+assd dice: 8.534977
+./output/20220129-142743/iter_2399.ckpt
+mask dice: 0.454366
+assd dice: 6.312000
+./output/20220129-142743/iter_2699.ckpt
+mask dice: 0.603744
+assd dice: 5.843094
+./output/20220129-142743/iter_2999.ckpt
+mask dice: 0.311344
+assd dice: 18.133460
+./output/20220129-142743/iter_3299.ckpt
+mask dice: 0.581474
+assd dice: 6.414840
+./output/20220129-142743/iter_3599.ckpt
+mask dice: 0.519296
+assd dice: 6.940303
+./output/20220129-142743/iter_3899.ckpt
+mask dice: 0.506357
+assd dice: 9.645150
+./output/20220129-142743/iter_4199.ckpt
+mask dice: 0.509896
+assd dice: 7.693453
+./output/20220129-142743/iter_4499.ckpt
+mask dice: 0.570615
+assd dice: 5.159187
+./output/20220129-142743/iter_4799.ckpt
+mask dice: 0.596531
+assd dice: 6.596688
+./output/20220129-142743/iter_5099.ckpt
+mask dice: 0.473006
+assd dice: 8.548294
+./output/20220129-142743/iter_5399.ckpt
+mask dice: 0.507353
+assd dice: 6.228526
+./output/20220129-142743/iter_5699.ckpt
+mask dice: 0.299339
+assd dice: 14.790081
+./output/20220129-142743/iter_5999.ckpt
+mask dice: 0.522579
+assd dice: 7.083579
+./output/20220129-142743/iter_6299.ckpt
+mask dice: 0.519036
+assd dice: 7.096919
+./output/20220129-142743/iter_6599.ckpt
+mask dice: 0.492893
+assd dice: 7.241187
+./output/20220129-142743/iter_6899.ckpt
+mask dice: 0.600862
+assd dice: 4.660630
+./output/20220129-142743/iter_7199.ckpt
+mask dice: 0.420642
+assd dice: 16.060787
+./output/20220129-142743/iter_7499.ckpt
+mask dice: 0.547068
+assd dice: 7.093459
+./output/20220129-142743/iter_7799.ckpt
+mask dice: 0.376339
+assd dice: 15.129052
+./output/20220129-142743/iter_8099.ckpt
+mask dice: 0.509018
+assd dice: 5.673412
+./output/20220129-142743/iter_8399.ckpt
+mask dice: 0.537111
+assd dice: 7.258681
+./output/20220129-142743/iter_8699.ckpt
+mask dice: 0.541669
+assd dice: 5.446050
+./output/20220129-142743/iter_8999.ckpt
+mask dice: 0.299835
+assd dice: 18.894427
+./output/20220129-142743/iter_9299.ckpt
+mask dice: 0.450883
+assd dice: 10.682043
+./output/20220129-142743/iter_9599.ckpt
+mask dice: 0.539378
+assd dice: 5.563494
+./output/20220129-142743/iter_9899.ckpt
+mask dice: 0.388524
+assd dice: 11.180202
+./output/20220129-142743/iter_10199.ckpt
+mask dice: 0.581342
+assd dice: 5.758319
+./output/20220129-142743/iter_10499.ckpt
+mask dice: 0.487836
+assd dice: 11.260143
+./output/20220129-142743/iter_10799.ckpt
+mask dice: 0.612032
+assd dice: 5.940139
+./output/20220129-142743/iter_11099.ckpt
+mask dice: 0.478995
+assd dice: 10.173176
+./output/20220129-142743/iter_11399.ckpt
+mask dice: 0.499320
+assd dice: 8.205450
+./output/20220129-142743/iter_11699.ckpt
+mask dice: 0.392847
+assd dice: 14.908176
+./output/20220129-142743/iter_11999.ckpt
+mask dice: 0.499423
+assd dice: 10.422595
+./output/20220129-142743/iter_12299.ckpt
+mask dice: 0.534075
+assd dice: 5.723343
+./output/20220129-142743/iter_12599.ckpt
+mask dice: 0.504957
+assd dice: 6.643297
+./output/20220129-142743/iter_12899.ckpt
+mask dice: 0.492253
+assd dice: 5.938212
+./output/20220129-142743/iter_13199.ckpt
+mask dice: 0.378782
+assd dice: 12.196658
+./output/20220129-142743/iter_13499.ckpt
+mask dice: 0.522535
+assd dice: 6.049332
+./output/20220130-004132/iter_299.ckpt
+mask dice: 0.244302
+assd dice: 15.953281
+./output/20220130-004132/iter_599.ckpt
+mask dice: 0.316208
+assd dice: 12.068262
+./output/20220130-004132/iter_899.ckpt
+mask dice: 0.189794
+assd dice: 21.053030
+./output/20220130-004132/iter_1199.ckpt
+mask dice: 0.248252
+assd dice: 9.962038
+./output/20220130-004132/iter_1499.ckpt
+mask dice: 0.431385
+assd dice: 10.324596
+./output/20220130-004132/iter_1799.ckpt
+mask dice: 0.415491
+assd dice: 13.035317
+./output/20220130-004132/iter_2099.ckpt
+mask dice: 0.299241
+assd dice: 16.165141
+./output/20220130-004132/iter_2399.ckpt
+mask dice: 0.211771
+assd dice: 16.593740
+./output/20220130-004132/iter_2699.ckpt
+mask dice: 0.141716
+assd dice: 19.685771
+./output/20220130-004132/iter_2999.ckpt
+mask dice: 0.412211
+assd dice: 10.094139
+./output/20220130-004132/iter_3299.ckpt
+mask dice: 0.223204
+assd dice: 27.937650
+./output/20220130-004132/iter_3599.ckpt
+mask dice: 0.334774
+assd dice: 12.516257
+./output/20220130-004132/iter_3899.ckpt
+mask dice: 0.132321
+assd dice: 50.363788
+./output/20220130-004132/iter_4199.ckpt
+mask dice: 0.161847
+assd dice: 43.507200
+./output/20220130-004132/iter_4499.ckpt
+mask dice: 0.085561
+assd dice: 35.010208
+./output/20220130-004132/iter_4799.ckpt
+mask dice: 0.186126
+assd dice: 24.431620
+./output/20220130-004132/iter_5099.ckpt
+mask dice: 0.419699
+assd dice: 15.100475
+./output/20220130-004132/iter_5399.ckpt
+mask dice: 0.078700
+assd dice: 32.709038
+./output/20220130-004132/iter_5699.ckpt
+mask dice: 0.371195
+assd dice: 8.712072
+./output/20220130-004132/iter_5999.ckpt
+mask dice: 0.237558
+assd dice: 30.876236
+./output/20220130-004132/iter_6299.ckpt
+mask dice: 0.194941
+assd dice: 41.355107
+./output/20220130-004132/iter_6599.ckpt
+mask dice: 0.308260
+assd dice: 22.549109
+./output/20220130-004132/iter_6899.ckpt
+mask dice: 0.285991
+assd dice: 18.781085
+./output/20220130-004132/iter_7199.ckpt
+mask dice: 0.395736
+assd dice: 15.051173
+./output/20220130-004132/iter_7499.ckpt
+mask dice: 0.323169
+assd dice: 15.659176
+./output/20220130-004132/iter_7799.ckpt
+mask dice: 0.199004
+assd dice: 27.700609
+./output/20220130-004132/iter_8099.ckpt
+mask dice: 0.199899
+assd dice: 30.229241
+./output/20220130-004132/iter_8399.ckpt
+mask dice: 0.253741
+assd dice: 23.093656
+./output/20220130-004132/iter_8699.ckpt
+mask dice: 0.342954
+assd dice: 15.230632
+./output/20220130-004132/iter_8999.ckpt
+mask dice: 0.390016
+assd dice: 16.557542
+./output/20220130-004132/iter_9299.ckpt
+mask dice: 0.173853
+assd dice: 19.099513
+./output/20220130-004132/iter_9599.ckpt
+mask dice: 0.367901
+assd dice: 11.903872
+./output/20220130-004132/iter_9899.ckpt
+mask dice: 0.229012
+assd dice: 25.713037
+./output/20220130-004132/iter_10199.ckpt
+mask dice: 0.364276
+assd dice: 17.745220
+./output/20220130-004132/iter_10499.ckpt
+mask dice: 0.169854
+assd dice: 26.986626
+./output/20220130-004132/iter_10799.ckpt
+mask dice: 0.528826
+assd dice: 6.784623
+./output/20220130-004132/iter_11099.ckpt
+mask dice: 0.403853
+assd dice: 11.605175
+./output/20220130-004132/iter_11399.ckpt
+mask dice: 0.416385
+assd dice: 7.910757
+./output/20220130-004132/iter_11699.ckpt
+mask dice: 0.348277
+assd dice: 12.022009
+./output/20220130-004132/iter_11999.ckpt
+mask dice: 0.571284
+assd dice: 5.236262
+./output/20220130-004132/iter_12299.ckpt
+mask dice: 0.596315
+assd dice: 5.967426
+./output/20220130-004132/iter_12599.ckpt
+mask dice: 0.543777
+assd dice: 6.238060
+./output/20220130-004132/iter_12899.ckpt
+mask dice: 0.444351
+assd dice: 7.003137
+./output/20220130-004132/iter_13199.ckpt
+mask dice: 0.445209
+assd dice: 15.116295
+./output/20220130-004132/iter_13499.ckpt
+mask dice: 0.572305
+assd dice: 7.644050
+./output/20220130-004132/iter_13799.ckpt
+mask dice: 0.412367
+assd dice: 10.662804
+./output/20220130-004132/iter_14099.ckpt
+mask dice: 0.444140
+assd dice: 10.784353
+./output/20220130-004132/iter_14399.ckpt
+mask dice: 0.288891
+assd dice: 22.867588
+./output/20220130-004132/iter_14699.ckpt
+mask dice: 0.311606
+assd dice: 17.077286
+./output/20220130-004132/iter_14999.ckpt
+mask dice: 0.387158
+assd dice: 16.440224
+./output/20220130-004132/iter_15299.ckpt
+mask dice: 0.529353
+assd dice: 10.061316
+./output/20220130-004132/iter_15599.ckpt
+mask dice: 0.589589
+assd dice: 7.601738
+./output/20220130-004132/iter_15899.ckpt
+mask dice: 0.422392
+assd dice: 6.778396
+./output/20220130-004132/iter_16199.ckpt
+mask dice: 0.594759
+assd dice: 5.760551
+./output/20220130-123316/iter_299.ckpt
+mask dice: 0.081137
+assd dice: 27.825207
+./output/20220130-123316/iter_599.ckpt
+mask dice: 0.362730
+assd dice: 11.962081
+./output/20220130-123316/iter_899.ckpt
+mask dice: 0.201506
+assd dice: 13.646600
+./output/20220130-123316/iter_1199.ckpt
+mask dice: 0.472760
+assd dice: 11.965302
+./output/20220130-123316/iter_1499.ckpt
+mask dice: 0.554660
+assd dice: 7.383940
+./output/20220130-123316/iter_1799.ckpt
+mask dice: 0.490231
+assd dice: 9.505823
+./output/20220130-123316/iter_2099.ckpt
+mask dice: 0.474339
+assd dice: 8.057458
+./output/20220130-123316/iter_2399.ckpt
+mask dice: 0.446086
+assd dice: 6.810313
+./output/20220130-123316/iter_2699.ckpt
+mask dice: 0.411228
+assd dice: 9.366301
+./output/20220130-123316/iter_2999.ckpt
+mask dice: 0.555552
+assd dice: 4.992558
+./output/20220130-123316/iter_3299.ckpt
+mask dice: 0.418998
+assd dice: 7.057542
+./output/20220130-123316/iter_3599.ckpt
+mask dice: 0.313866
+assd dice: 12.629009
+./output/20220130-123316/iter_3899.ckpt
+mask dice: 0.389705
+assd dice: 11.993989
+./output/20220130-123316/iter_4199.ckpt
+mask dice: 0.516658
+assd dice: 10.900639
+./output/20220130-123316/iter_4499.ckpt
+mask dice: 0.344061
+assd dice: 12.890326
+./output/20220130-123316/iter_4799.ckpt
+mask dice: 0.535218
+assd dice: 6.106376
+./output/20220130-123316/iter_5099.ckpt
+mask dice: 0.624725
+assd dice: 7.152676
+./output/20220130-123316/iter_5399.ckpt
+mask dice: 0.439759
+assd dice: 13.760538
+./output/20220130-123316/iter_5699.ckpt
+mask dice: 0.412087
+assd dice: 9.052532
+./output/20220130-123316/iter_5999.ckpt
+mask dice: 0.373328
+assd dice: 15.476179
+./output/20220130-123316/iter_6299.ckpt
+mask dice: 0.536439
+assd dice: 5.918243
+./output/20220130-123316/iter_6599.ckpt
+mask dice: 0.569905
+assd dice: 7.886470
+./output/20220130-123316/iter_6899.ckpt
+mask dice: 0.411303
+assd dice: 8.921289
+./output/20220130-123316/iter_7199.ckpt
+mask dice: 0.610737
+assd dice: 6.895140
+./output/20220130-123316/iter_7499.ckpt
+mask dice: 0.535181
+assd dice: 8.471202
+./output/20220130-123316/iter_7799.ckpt
+mask dice: 0.457435
+assd dice: 11.141457
+./output/20220130-123316/iter_8099.ckpt
+mask dice: 0.540136
+assd dice: 6.453811
+./output/20220130-123316/iter_8399.ckpt
+mask dice: 0.551765
+assd dice: 7.882746
+./output/20220130-123316/iter_8699.ckpt
+mask dice: 0.502849
+assd dice: 12.585145
+./output/20220130-123316/iter_8999.ckpt
+mask dice: 0.507923
+assd dice: 10.319234
+./output/20220130-123316/iter_9299.ckpt
+mask dice: 0.443371
+assd dice: 6.354941
+./output/20220130-123316/iter_9599.ckpt
+mask dice: 0.591164
+assd dice: 5.318211
+./output/20220130-123316/iter_9899.ckpt
+mask dice: 0.598183
+assd dice: 7.426056
+./output/20220130-123316/iter_10199.ckpt
+mask dice: 0.590486
+assd dice: 5.965321
+./output/20220130-123316/iter_10499.ckpt
+mask dice: 0.563873
+assd dice: 6.176335
+./output/20220130-123316/iter_10799.ckpt
+mask dice: 0.418364
+assd dice: 11.261532
+./output/20220130-123316/iter_11099.ckpt
+mask dice: 0.544967
+assd dice: 6.033221
+./output/20220130-123316/iter_11399.ckpt
+mask dice: 0.538065
+assd dice: 8.215433
+./output/20220130-123316/iter_11699.ckpt
+mask dice: 0.562554
+assd dice: 5.181612
+./output/20220130-123316/iter_11999.ckpt
+mask dice: 0.626745
+assd dice: 6.803751
+./output/20220130-123316/iter_12299.ckpt
+mask dice: 0.674682
+assd dice: 4.614945
+./output/20220130-123316/iter_12599.ckpt
+mask dice: 0.605821
+assd dice: 5.454573
+./output/20220130-123316/iter_12899.ckpt
+mask dice: 0.587871
+assd dice: 7.046152
+./output/20220130-123316/iter_13199.ckpt
+mask dice: 0.582156
+assd dice: 5.583079
+./output/20220130-123316/iter_13499.ckpt
+mask dice: 0.595262
+assd dice: 6.518223
+./output/20220130-123316/iter_13799.ckpt
+mask dice: 0.571185
+assd dice: 5.943298
+./output/20220130-123316/iter_14099.ckpt
+mask dice: 0.657096
+assd dice: 4.579490
+./output/20220130-123316/iter_14399.ckpt
+mask dice: 0.640046
+assd dice: 6.276340
+./output/20220130-123316/iter_14699.ckpt
+mask dice: 0.601172
+assd dice: 5.081398
+./output/20220130-123316/iter_14999.ckpt
+mask dice: 0.576395
+assd dice: 5.779186
+./output/20220130-123316/iter_15299.ckpt
+mask dice: 0.542752
+assd dice: 6.196195
+./output/20220130-123316/iter_15599.ckpt
+mask dice: 0.542359
+assd dice: 6.293583
+./output/20220130-123316/iter_15899.ckpt
+mask dice: 0.522710
+assd dice: 5.751931
+./output/20220130-123316/iter_16199.ckpt
+mask dice: 0.574147
+assd dice: 6.666699
+./output/20220130-123316/iter_16499.ckpt
+mask dice: 0.553483
+assd dice: 5.698657
+./output/20220130-123316/iter_16799.ckpt
+mask dice: 0.590870
+assd dice: 5.729532
+./output/20220130-123316/iter_17099.ckpt
+mask dice: 0.345957
+assd dice: 11.965816
+./output/20220130-123316/iter_17399.ckpt
+mask dice: 0.614748
+assd dice: 6.081455
+./output/20220130-123316/iter_17699.ckpt
+mask dice: 0.627572
+assd dice: 6.173880
+./output/20220130-123316/iter_17999.ckpt
+mask dice: 0.451332
+assd dice: 7.861811
+./output/20220130-123316/iter_18299.ckpt
+mask dice: 0.408257
+assd dice: 8.199834
+./output/20220130-123316/iter_18599.ckpt
+mask dice: 0.391891
+assd dice: 8.250590
+./output/20220130-123316/iter_18899.ckpt
+mask dice: 0.555222
+assd dice: 6.423270
+./output/20220130-123316/iter_19199.ckpt
+mask dice: 0.439756
+assd dice: 7.683116
+./output/20220130-123316/iter_19499.ckpt
+mask dice: 0.499913
+assd dice: 5.861314
+./output/20220130-123316/iter_19799.ckpt
+mask dice: 0.555851
+assd dice: 6.302453
+./output/20220130-123316/iter_20099.ckpt
+mask dice: 0.542734
+assd dice: 7.466163
+./output/20220130-123316/iter_20399.ckpt
+mask dice: 0.503378
+assd dice: 6.289277
+./output/20220130-123316/iter_20699.ckpt
+mask dice: 0.546137
+assd dice: 5.865797
+./output/20220130-123316/iter_20999.ckpt
+mask dice: 0.492340
+assd dice: 7.429817
+./output/20220130-123316/iter_21299.ckpt
+mask dice: 0.485674
+assd dice: 7.072246
+./output/20220130-123316/iter_21599.ckpt
+mask dice: 0.351062
+assd dice: 10.465001
+./output/20220130-123316/iter_21899.ckpt
+mask dice: 0.535335
+assd dice: 5.990877
+./output/20220130-123316/iter_22199.ckpt
+mask dice: 0.539540
+assd dice: 7.057794
+./output/20220130-123316/iter_22499.ckpt
+mask dice: 0.446845
+assd dice: 7.049897
+./output/20220130-123316/iter_22799.ckpt
+mask dice: 0.388185
+assd dice: 8.595022
+./output/20220130-123316/iter_23099.ckpt
+mask dice: 0.585560
+assd dice: 6.707464
+./output/20220130-123316/iter_23399.ckpt
+mask dice: 0.520867
+assd dice: 5.479686
+./output/20220130-123316/iter_23699.ckpt
+mask dice: 0.502692
+assd dice: 6.130289
+./output/20220130-123316/iter_23999.ckpt
+mask dice: 0.529894
+assd dice: 6.110527
+./output/20220130-123316/iter_24299.ckpt
+mask dice: 0.453506
+assd dice: 7.165664
+./output/20220130-123316/iter_24599.ckpt
+mask dice: 0.389672
+assd dice: 7.968916
+./output/20220130-123316/iter_24899.ckpt
+mask dice: 0.462960
+assd dice: 7.095831
+./output/20220130-123316/iter_25199.ckpt
+mask dice: 0.561767
+assd dice: 4.969274
+./output/20220130-123316/iter_25499.ckpt
+mask dice: 0.561934
+assd dice: 5.981633
+./output/20220130-123316/iter_25799.ckpt
+mask dice: 0.523310
+assd dice: 6.157769
+./output/20220130-123316/iter_26099.ckpt
+mask dice: 0.393685
+assd dice: 7.605110
+./output/20220130-123316/iter_26399.ckpt
+mask dice: 0.545384
+assd dice: 5.554073
+./output/transformer12layers/iter_899.ckpt
+mask dice: 0.148392
+assd dice: 42.540555
+./output/transformer12layers/iter_1199.ckpt
+mask dice: 0.273212
+assd dice: 16.015090
+./output/transformer12layers/iter_1499.ckpt
+mask dice: 0.220788
+assd dice: 23.265046
+./output/transformer12layers/iter_1799.ckpt
+mask dice: 0.348813
+assd dice: 10.530468
+./output/transformer12layers/iter_2099.ckpt
+mask dice: 0.270604
+assd dice: 18.419149
+./output/transformer12layers/iter_2399.ckpt
+mask dice: 0.454539
+assd dice: 11.068736
+./output/transformer12layers/iter_2699.ckpt
+mask dice: 0.409023
+assd dice: 13.263255
+./output/transformer12layers/iter_2999.ckpt
+mask dice: 0.327443
+assd dice: 14.062846
+./output/transformer12layers/iter_3299.ckpt
+mask dice: 0.283795
+assd dice: 23.293986
+./output/transformer12layers/iter_3599.ckpt
+mask dice: 0.194120
+assd dice: 22.683135
+./output/transformer12layers/iter_3899.ckpt
+mask dice: 0.225564
+assd dice: 27.783587
+./output/transformer12layers/iter_4199.ckpt
+mask dice: 0.173526
+assd dice: 25.751512
+./output/transformer12layers/iter_4499.ckpt
+mask dice: 0.357833
+assd dice: 14.030172
+./output/transformer12layers/iter_4799.ckpt
+mask dice: 0.259242
+assd dice: 21.571816
+./output/transformer12layers/iter_5099.ckpt
+mask dice: 0.358422
+assd dice: 13.153672
+./output/transformer12layers/iter_5399.ckpt
+mask dice: 0.162061
+assd dice: 22.294409
+./output/transformer12layers/iter_5699.ckpt
+mask dice: 0.318446
+assd dice: 21.005520
+./output/transformer12layers/iter_5999.ckpt
+mask dice: 0.232539
+assd dice: 17.737309
+./output/transformer12layers/iter_6299.ckpt
+mask dice: 0.224101
+assd dice: 22.376933
+./output/transformer12layers/iter_6599.ckpt
+mask dice: 0.167948
+assd dice: 26.747872
+./output/transformer12layers/iter_6899.ckpt
+mask dice: 0.385228
+assd dice: 13.973459
+./output/transformer12layers/iter_7199.ckpt
+mask dice: 0.466712
+assd dice: 11.931175
+./output/transformer12layers/iter_7499.ckpt
+mask dice: 0.382484
+assd dice: 16.702698
+./output/transformer12layers/iter_7799.ckpt
+mask dice: 0.465542
+assd dice: 14.864647
+./output/transformer12layers/iter_8099.ckpt
+mask dice: 0.486639
+assd dice: 7.641230
+./output/transformer12layers/iter_8399.ckpt
+mask dice: 0.194822
+assd dice: 30.089396
+./output/transformer12layers/iter_8699.ckpt
+mask dice: 0.483878
+assd dice: 15.023724
+./output/transformer12layers/iter_8999.ckpt
+mask dice: 0.398292
+assd dice: 9.053018
+./output/transformer12layers/iter_9299.ckpt
+mask dice: 0.417621
+assd dice: 8.922837
+./output/transformer12layers/iter_9599.ckpt
+mask dice: 0.513648
+assd dice: 6.034553
+./output/transformer12layers/iter_9899.ckpt
+mask dice: 0.487616
+assd dice: 7.101032
+./output/transformer12layers/iter_10199.ckpt
+mask dice: 0.493968
+assd dice: 6.057935
+./output/transformer12layers/iter_10499.ckpt
+mask dice: 0.601338
+assd dice: 6.828168
+./output/transformer12layers/iter_10799.ckpt
+mask dice: 0.486275
+assd dice: 6.010109
+./output/transformer12layers/iter_11099.ckpt
+mask dice: 0.612732
+assd dice: 5.357998
+./output/transformer12layers/iter_11399.ckpt
+mask dice: 0.566986
+assd dice: 6.766441
+./output/transformer12layers/iter_11699.ckpt
+mask dice: 0.329475
+assd dice: 7.271454
+./output/transformer12layers/iter_11999.ckpt
+mask dice: 0.511538
+assd dice: 10.408787
+./output/transformer12layers/iter_12299.ckpt
+mask dice: 0.429807
+assd dice: 15.874279
+./output/transformer12layers/iter_12599.ckpt
+mask dice: 0.561533
+assd dice: 7.131720
+./output/transformer12layers/iter_12899.ckpt
+mask dice: 0.514577
+assd dice: 6.209314
+./output/transformer12layers/iter_13199.ckpt
+mask dice: 0.553045
+assd dice: 5.324504
+./output/transformer12layers/iter_13499.ckpt
+mask dice: 0.651392
+assd dice: 4.748212
+./output/transformer12layers/iter_13799.ckpt
+mask dice: 0.442646
+assd dice: 10.860989
+./output/model-lam/iter_299.ckpt
+mask dice: 0.399142
+assd dice: 12.187332
+./output/model-lam/iter_599.ckpt
+mask dice: 0.387335
+assd dice: 10.428687
+./output/model-lam/iter_899.ckpt
+mask dice: 0.405383
+assd dice: 9.961205
+./output/model-lam/iter_1199.ckpt
+mask dice: 0.388914
+assd dice: 9.097986
+./output/model-lam/iter_1499.ckpt
+mask dice: 0.408604
+assd dice: 10.892072
+./output/model-lam/iter_1799.ckpt
+mask dice: 0.427642
+assd dice: 13.516118
+./output/model-lam/iter_2099.ckpt
+mask dice: 0.305501
+assd dice: 14.204900
+./output/model-lam/iter_2399.ckpt
+mask dice: 0.406741
+assd dice: 21.572788
+./output/model-lam/iter_2699.ckpt
+mask dice: 0.391885
+assd dice: 10.170622
+./output/model-lam/iter_2999.ckpt
+mask dice: 0.283079
+assd dice: 25.679246
+./output/model-lam/iter_3299.ckpt
+mask dice: 0.380439
+assd dice: 17.163048
+./output/model-lam/iter_3599.ckpt
+mask dice: 0.214972
+assd dice: 30.915544
+./output/model-lam/iter_3899.ckpt
+mask dice: 0.383152
+assd dice: 11.218944
+./output/model-lam/iter_4199.ckpt
+mask dice: 0.201358
+assd dice: 27.623858
+./output/model-lam/iter_4499.ckpt
+mask dice: 0.303593
+assd dice: 18.810857
+./output/model-lam/iter_4799.ckpt
+mask dice: 0.266705
+assd dice: 26.084474
+./output/model-lam/iter_5099.ckpt
+mask dice: 0.196739
+assd dice: 17.278065
+./output/model-lam/iter_5399.ckpt
+mask dice: 0.253359
+assd dice: 26.950926
+./output/model-lam/iter_5699.ckpt
+mask dice: 0.366653
+assd dice: 14.461159
+./output/model-lam/iter_5999.ckpt
+mask dice: 0.254262
+assd dice: 26.730906
+./output/model-lam/iter_6299.ckpt
+mask dice: 0.327057
+assd dice: 15.187617
+./output/model-lam/iter_6599.ckpt
+mask dice: 0.392149
+assd dice: 16.503018
+./output/model-lam/iter_6899.ckpt
+mask dice: 0.281987
+assd dice: 21.624728
+./output/model-lam/iter_7199.ckpt
+mask dice: 0.208808
+assd dice: 20.247810
+./output/model-lam/iter_7499.ckpt
+mask dice: 0.455290
+assd dice: 9.364799
+./output/model-lam/iter_7799.ckpt
+mask dice: 0.341988
+assd dice: 17.094684
+./output/model-lam/iter_8099.ckpt
+mask dice: 0.254488
+assd dice: 32.182915
+./output/model-lam/iter_8399.ckpt
+mask dice: 0.438883
+assd dice: 14.256434
+./output/model-lam/iter_8699.ckpt
+mask dice: 0.284474
+assd dice: 12.757536
+./output/model-lam/iter_8999.ckpt
+mask dice: 0.377488
+assd dice: 16.418213
+./output/model-lam/iter_9299.ckpt
+mask dice: 0.482134
+assd dice: 6.480748
+./output/model-lam/iter_9599.ckpt
+mask dice: 0.330632
+assd dice: 14.989234
+./output/model-lam/iter_9899.ckpt
+mask dice: 0.394213
+assd dice: 6.973319
+./output/model-lam/iter_10199.ckpt
+mask dice: 0.288116
+assd dice: 18.955326
+./output/model-lam/iter_10499.ckpt
+mask dice: 0.335813
+assd dice: 18.432657
+./output/model-lam/iter_10799.ckpt
+mask dice: 0.373309
+assd dice: 12.271154
+./output/model-lam/iter_11099.ckpt
+mask dice: 0.385225
+assd dice: 16.329754
+./output/model-lam/iter_11399.ckpt
+mask dice: 0.424592
+assd dice: 9.315531
+./output/model-lam/iter_11699.ckpt
+mask dice: 0.526831
+assd dice: 5.686813
+./output/model-lam/iter_11999.ckpt
+mask dice: 0.439545
+assd dice: 15.667291
+./output/model-lam/iter_12299.ckpt
+mask dice: 0.424047
+assd dice: 11.660051
+./output/model-lam/iter_12599.ckpt
+mask dice: 0.472767
+assd dice: 7.519302
+./output/model-lam/iter_12899.ckpt
+mask dice: 0.462503
+assd dice: 9.367431
+./output/model-lam/iter_13199.ckpt
+mask dice: 0.569052
+assd dice: 5.399117
+./output/model-lam/iter_13499.ckpt
+mask dice: 0.402312
+assd dice: 7.068795
+./output/model-lam/iter_13799.ckpt
+mask dice: 0.487844
+assd dice: 7.117327
+./output/model-lam/iter_14099.ckpt
+mask dice: 0.416863
+assd dice: 15.506600
+./output/model-lam/iter_14399.ckpt
+mask dice: 0.460485
+assd dice: 10.989910
+./output/model-lam/iter_14699.ckpt
+mask dice: 0.129422
+assd dice: 29.572760
+./output/model-lam/iter_14999.ckpt
+mask dice: 0.411646
+assd dice: 13.298684
+./output/model-lam/iter_15299.ckpt
+mask dice: 0.297274
+assd dice: 18.337121
+./output/model-lam/iter_15599.ckpt
+mask dice: 0.501901
+assd dice: 6.599431
+./output/model-lam/iter_15899.ckpt
+mask dice: 0.464238
+assd dice: 11.392605
+./output/model-lam/iter_16199.ckpt
+mask dice: 0.415281
+assd dice: 13.969016
+./output/model-lam/iter_16499.ckpt
+mask dice: 0.521232
+assd dice: 5.792670
+./output/model-lam/iter_16799.ckpt
+mask dice: 0.364088
+assd dice: 17.058629
+./output/20220206-111333/iter_7199.ckpt
+mask dice: 0.439864
+assd dice: 11.225947
+./output/20220206-111333/iter_7499.ckpt
+mask dice: 0.549024
+assd dice: 6.855445
+./output/20220206-111333/iter_7799.ckpt
+mask dice: 0.538997
+assd dice: 5.549716
+./output/20220206-111333/iter_8099.ckpt
+mask dice: 0.603949
+assd dice: 5.479758
+./output/20220206-111333/iter_8399.ckpt
+mask dice: 0.521091
+assd dice: 6.242056
+./output/20220206-111333/iter_8699.ckpt
+mask dice: 0.565756
+assd dice: 7.189962
+./output/20220206-111333/iter_8999.ckpt
+mask dice: 0.614396
+assd dice: 5.429304
+./output/20220206-111333/iter_9299.ckpt
+mask dice: 0.520866
+assd dice: 5.800912
+./output/20220206-111333/iter_9599.ckpt
+mask dice: 0.426294
+assd dice: 11.225380
+./output/20220206-111333/iter_9899.ckpt
+mask dice: 0.477344
+assd dice: 9.960969
+./output/20220206-111333/iter_10199.ckpt
+mask dice: 0.532109
+assd dice: 6.817466
+./output/20220206-111333/iter_10499.ckpt
+mask dice: 0.490550
+assd dice: 5.895310
+./output/20220206-111333/iter_10799.ckpt
+mask dice: 0.472891
+assd dice: 6.604816
+./output/20220206-111333/iter_11099.ckpt
+mask dice: 0.416744
+assd dice: 12.689822
+./output/20220206-111333/iter_11399.ckpt
+mask dice: 0.531335
+assd dice: 6.343075
+./output/20220206-111333/iter_11699.ckpt
+mask dice: 0.597510
+assd dice: 7.282667
+./output/20220206-111333/iter_11999.ckpt
+mask dice: 0.447771
+assd dice: 11.103361
+./output/20220206-111333/iter_12299.ckpt
+mask dice: 0.497392
+assd dice: 6.076246
+./output/20220206-111333/iter_12599.ckpt
+mask dice: 0.558766
+assd dice: 6.635247
+./output/20220206-111333/iter_12899.ckpt
+mask dice: 0.553874
+assd dice: 5.273838
+./output/20220206-111333/iter_13199.ckpt
+mask dice: 0.584172
+assd dice: 4.911002
+./output/20220206-111333/iter_13499.ckpt
+mask dice: 0.645791
+assd dice: 4.511186
+./output/20220206-111333/iter_13799.ckpt
+mask dice: 0.427734
+assd dice: 6.769155
+./output/20220206-111333/iter_14099.ckpt
+mask dice: 0.420740
+assd dice: 9.905287
+./output/20220206-111333/iter_14399.ckpt
+mask dice: 0.369433
+assd dice: 16.133591
+./output/20220206-111333/iter_14699.ckpt
+mask dice: 0.502758
+assd dice: 6.803380
+./output/20220206-111333/iter_14999.ckpt
+mask dice: 0.461197
+assd dice: 6.514516
+./output/20220206-111333/iter_15299.ckpt
+mask dice: 0.583480
+assd dice: 5.414760
+./output/20220206-111333/iter_15599.ckpt
+mask dice: 0.517225
+assd dice: 5.975582
+./output/20220206-111333/iter_15899.ckpt
+mask dice: 0.589764
+assd dice: 7.581572
+./output/20220206-111333/iter_16199.ckpt
+mask dice: 0.604048
+assd dice: 5.033033
+./output/20220206-111333/iter_16499.ckpt
+mask dice: 0.555624
+assd dice: 5.670901
+./output/20220206-111333/iter_16799.ckpt
+mask dice: 0.357341
+assd dice: 12.413936
+./output/20220206-111333/iter_17099.ckpt
+mask dice: 0.532735
+assd dice: 5.517299
+./output/20220206-111333/iter_17399.ckpt
+mask dice: 0.544507
+assd dice: 6.486685
+./output/20220206-111333/iter_17699.ckpt
+mask dice: 0.542362
+assd dice: 6.360528
+./output/20220206-111333/iter_17999.ckpt
+mask dice: 0.539418
+assd dice: 5.680137
+./output/20220206-111333/iter_18299.ckpt
+mask dice: 0.593975
+assd dice: 7.092616
+./output/20220206-111333/iter_18599.ckpt
+mask dice: 0.544812
+assd dice: 10.506283
+./output/20220206-111333/iter_18899.ckpt
+mask dice: 0.602140
+assd dice: 4.681989
+./output/20220206-111333/iter_19199.ckpt
+mask dice: 0.449690
+assd dice: 8.301206
+./output/20220206-111333/iter_19499.ckpt
+mask dice: 0.397320
+assd dice: 11.078529
+./output/20220206-111333/iter_19799.ckpt
+mask dice: 0.535994
+assd dice: 5.101976
+./output/20220206-111333/iter_20099.ckpt
+mask dice: 0.528418
+assd dice: 5.154148
+./output/20220206-111333/iter_20399.ckpt
+mask dice: 0.432347
+assd dice: 6.223558
+./output/20220206-111333/iter_20699.ckpt
+mask dice: 0.538590
+assd dice: 5.091987
+./output/20220206-111333/iter_20999.ckpt
+mask dice: 0.566847
+assd dice: 7.094920
+./output/20220206-111333/iter_21299.ckpt
+mask dice: 0.605878
+assd dice: 4.649489
+./output/20220206-111333/iter_21599.ckpt
+mask dice: 0.250650
+assd dice: 14.608059
+./output/20220206-111333/iter_21899.ckpt
+mask dice: 0.556514
+assd dice: 7.199558
+./output/20220206-111333/iter_22199.ckpt
+mask dice: 0.540233
+assd dice: 5.336776
+./output/20220206-111333/iter_22499.ckpt
+mask dice: 0.575097
+assd dice: 6.034677
+./output/20220206-111333/iter_22799.ckpt
+mask dice: 0.556773
+assd dice: 5.731533
+./output/20220206-111333/iter_23099.ckpt
+mask dice: 0.514193
+assd dice: 5.889291
+./output/20220206-111333/iter_23399.ckpt
+mask dice: 0.443656
+assd dice: 8.886478
+./output/20220206-111333/iter_23699.ckpt
+mask dice: 0.529323
+assd dice: 8.050801
+./output/20220206-111333/iter_23999.ckpt
+mask dice: 0.498096
+assd dice: 6.365755
+./output/20220206-111333/iter_24299.ckpt
+mask dice: 0.344308
+assd dice: 11.623188
+./output/20220206-111333/iter_24599.ckpt
+mask dice: 0.414782
+assd dice: 6.544852
+./output/20220225-014420/iter_3899.ckpt
+mask dice: 0.476992
+assd dice: 6.954537
+./output/20220225-014420/iter_4199.ckpt
+mask dice: 0.477865
+assd dice: 7.759107
+./output/20220225-014420/iter_4499.ckpt
+mask dice: 0.451024
+assd dice: 11.793331
+./output/20220225-014420/iter_4799.ckpt
+mask dice: 0.518592
+assd dice: 7.988952
+./output/20220225-014420/iter_5099.ckpt
+mask dice: 0.277764
+assd dice: 11.005711
+./output/20220225-014420/iter_5399.ckpt
+mask dice: 0.341671
+assd dice: 15.790498
+./output/20220225-014420/iter_5699.ckpt
+mask dice: 0.467136
+assd dice: 7.467036
+./output/20220225-014420/iter_5999.ckpt
+mask dice: 0.540548
+assd dice: 6.223525
+./output/20220225-014420/iter_6299.ckpt
+mask dice: 0.392554
+assd dice: 15.861644
+./output/20220225-014420/iter_6599.ckpt
+mask dice: 0.529077
+assd dice: 6.322416
+./output/20220225-014420/iter_6899.ckpt
+mask dice: 0.456574
+assd dice: 11.419441
+./output/20220225-014420/iter_7199.ckpt
+mask dice: 0.566185
+assd dice: 7.206791
+./output/20220225-014420/iter_7499.ckpt
+mask dice: 0.524408
+assd dice: 9.090352
+./output/20220225-014420/iter_7799.ckpt
+mask dice: 0.357286
+assd dice: 12.660772
+./output/20220225-014420/iter_8099.ckpt
+mask dice: 0.460681
+assd dice: 6.184270
+./output/20220225-014420/iter_8399.ckpt
+mask dice: 0.557333
+assd dice: 6.313030
+./output/20220225-014420/iter_8699.ckpt
+mask dice: 0.569803
+assd dice: 6.062379
+./output/20220225-014420/iter_8999.ckpt
+mask dice: 0.464024
+assd dice: 6.364572
+./output/20220225-014420/iter_9299.ckpt
+mask dice: 0.358395
+assd dice: 12.146889
+./output/20220225-014420/iter_9599.ckpt
+mask dice: 0.356757
+assd dice: 9.104642
+./output/20220225-014420/iter_9899.ckpt
+mask dice: 0.518693
+assd dice: 7.041029
+./output/20220225-014420/iter_10199.ckpt
+mask dice: 0.351444
+assd dice: 15.302157
+./output/20220225-014420/iter_10499.ckpt
+mask dice: 0.365609
+assd dice: 16.719133
+./output/20220225-014420/iter_10799.ckpt
+mask dice: 0.566404
+assd dice: 7.296514
+./output/20220225-014420/iter_11099.ckpt
+mask dice: 0.432847
+assd dice: 11.408471
+./output/20220225-014420/iter_11399.ckpt
+mask dice: 0.484850
+assd dice: 10.048549
+./output/20220225-014420/iter_11699.ckpt
+mask dice: 0.386886
+assd dice: 15.119609
+./output/20220225-014420/iter_11999.ckpt
+mask dice: 0.536397
+assd dice: 6.489129
+./output/20220225-014420/iter_12299.ckpt
+mask dice: 0.593643
+assd dice: 5.106790
+./output/20220225-014420/iter_12599.ckpt
+mask dice: 0.582533
+assd dice: 5.950844
+./output/20220225-014420/iter_12899.ckpt
+mask dice: 0.518195
+assd dice: 6.567471
+./output/20220225-014420/iter_13199.ckpt
+mask dice: 0.500800
+assd dice: 10.671400
+./output/20220225-014420/iter_13499.ckpt
+mask dice: 0.298924
+assd dice: 17.316873
+./output/20220225-014420/iter_13799.ckpt
+mask dice: 0.476073
+assd dice: 10.361713
+./output/20220225-014420/iter_14099.ckpt
+mask dice: 0.538373
+assd dice: 7.957757
+./output/20220225-014420/iter_14399.ckpt
+mask dice: 0.545457
+assd dice: 6.433447
+./output/20220225-014420/iter_14699.ckpt
+mask dice: 0.302303
+assd dice: 23.837511
+./output/20220225-014420/iter_14999.ckpt
+mask dice: 0.635241
+assd dice: 6.374832
+./output/20220225-014420/iter_15299.ckpt
+mask dice: 0.519436
+assd dice: 9.765020
+./output/20220225-014420/iter_15599.ckpt
+mask dice: 0.273094
+assd dice: 10.128068
+./output/20220225-014420/iter_15899.ckpt
+mask dice: 0.547018
+assd dice: 6.387802
+./output/20220225-014420/iter_16199.ckpt
+mask dice: 0.506012
+assd dice: 14.507125
+./output/20220225-014420/iter_16499.ckpt
+mask dice: 0.533532
+assd dice: 9.570835
+./output/20220225-014420/iter_16799.ckpt
+mask dice: 0.598177
+assd dice: 6.249691
+./output/20220225-014420/iter_17099.ckpt
+mask dice: 0.386288
+assd dice: 11.843413
+./output/20220225-014420/iter_17399.ckpt
+mask dice: 0.500729
+assd dice: 6.209489
+./output/20220225-014420/iter_17699.ckpt
+mask dice: 0.556049
+assd dice: 7.620980
+./output/20220225-014420/iter_17999.ckpt
+mask dice: 0.475991
+assd dice: 7.525025
+./output/20220225-014420/iter_18299.ckpt
+mask dice: 0.454086
+assd dice: 14.455765
+./output/20220225-014420/iter_18599.ckpt
+mask dice: 0.495515
+assd dice: 6.973301
+./output/20220225-014420/iter_18899.ckpt
+mask dice: 0.398802
+assd dice: 8.927333
+./output/20220225-014420/iter_19199.ckpt
+mask dice: 0.326079
+assd dice: 17.101912
+./output/20220225-014420/iter_19499.ckpt
+mask dice: 0.472622
+assd dice: 7.197535
+./output/20220225-014420/iter_19799.ckpt
+mask dice: 0.500020
+assd dice: 6.206647
+./output/20220225-014420/iter_20099.ckpt
+mask dice: 0.488317
+assd dice: 10.311534
+./output/20220225-014420/iter_20399.ckpt
+mask dice: 0.504308
+assd dice: 9.139321
+./output/20220225-174320/iter_299.ckpt
+mask dice: 0.055823
+assd dice: 28.080911
+./output/20220225-174320/iter_599.ckpt
+mask dice: 0.291086
+assd dice: 11.787437
+./output/20220225-174320/iter_899.ckpt
+mask dice: 0.347084
+assd dice: 12.070224
+./output/20220225-174320/iter_1199.ckpt
+mask dice: 0.421048
+assd dice: 9.052000
+./output/20220225-174320/iter_1499.ckpt
+mask dice: 0.450350
+assd dice: 7.555042
+./output/20220225-174320/iter_1799.ckpt
+mask dice: 0.445037
+assd dice: 10.416200
+./output/20220225-174320/iter_2099.ckpt
+mask dice: 0.461168
+assd dice: 7.655687
+./output/20220225-174320/iter_2399.ckpt
+mask dice: 0.426216
+assd dice: 7.068708
+./output/20220225-174320/iter_2699.ckpt
+mask dice: 0.509040
+assd dice: 8.335387
+./output/20220225-174320/iter_2999.ckpt
+mask dice: 0.490799
+assd dice: 8.416773
+./output/20220225-174320/iter_3299.ckpt
+mask dice: 0.413706
+assd dice: 7.884317
+./output/20220225-174320/iter_3599.ckpt
+mask dice: 0.522111
+assd dice: 8.807208
+./output/20220225-174320/iter_3899.ckpt
+mask dice: 0.408569
+assd dice: 10.049593
+./output/20220225-174320/iter_4199.ckpt
+mask dice: 0.594037
+assd dice: 7.875643
+./output/20220225-174320/iter_4499.ckpt
+mask dice: 0.600882
+assd dice: 7.275963
+./output/20220225-174320/iter_4799.ckpt
+mask dice: 0.592274
+assd dice: 7.359686
+./output/20220225-174320/iter_5099.ckpt
+mask dice: 0.565113
+assd dice: 5.114735
+./output/20220225-174320/iter_5399.ckpt
+mask dice: 0.443872
+assd dice: 7.086268
+./output/20220225-174320/iter_5699.ckpt
+mask dice: 0.380869
+assd dice: 8.043743
+./output/20220225-174320/iter_5999.ckpt
+mask dice: 0.615481
+assd dice: 5.791371
+./output/20220225-174320/iter_6299.ckpt
+mask dice: 0.551242
+assd dice: 8.797055
+./output/20220225-174320/iter_6599.ckpt
+mask dice: 0.444859
+assd dice: 7.687218
+./output/20220225-174320/iter_6899.ckpt
+mask dice: 0.589271
+assd dice: 5.215953
+./output/20220225-174320/iter_7199.ckpt
+mask dice: 0.555863
+assd dice: 9.217229
+./output/20220225-174320/iter_7499.ckpt
+mask dice: 0.404808
+assd dice: 14.070312
+./output/20220225-174320/iter_7799.ckpt
+mask dice: 0.535583
+assd dice: 9.457110
+./output/20220225-174320/iter_8099.ckpt
+mask dice: 0.517620
+assd dice: 10.276461
+./output/20220225-174320/iter_8399.ckpt
+mask dice: 0.322235
+assd dice: 13.392435
+./output/20220225-174320/iter_8699.ckpt
+mask dice: 0.544021
+assd dice: 5.945588
+./output/20220225-174320/iter_8999.ckpt
+mask dice: 0.620161
+assd dice: 5.411347
+./output/20220225-174320/iter_9299.ckpt
+mask dice: 0.614647
+assd dice: 5.590605
+./output/20220225-174320/iter_9599.ckpt
+mask dice: 0.617046
+assd dice: 5.048737
+./output/20220225-174320/iter_9899.ckpt
+mask dice: 0.516767
+assd dice: 6.093690
+./output/20220225-174320/iter_10199.ckpt
+mask dice: 0.443074
+assd dice: 9.016757
+./output/20220225-174320/iter_10499.ckpt
+mask dice: 0.517267
+assd dice: 10.037899
+./output/20220225-174320/iter_10799.ckpt
+mask dice: 0.536967
+assd dice: 6.422188
+./output/20220225-174320/iter_11099.ckpt
+mask dice: 0.405607
+assd dice: 11.026094
+./output/20220225-174320/iter_11399.ckpt
+mask dice: 0.501391
+assd dice: 5.866890
+./output/20220225-174320/iter_11699.ckpt
+mask dice: 0.474007
+assd dice: 6.444597
+./output/20220225-174320/iter_11999.ckpt
+mask dice: 0.574669
+assd dice: 6.830055
+./output/20220225-174320/iter_12299.ckpt
+mask dice: 0.578886
+assd dice: 6.242536
+./output/20220225-174320/iter_12599.ckpt
+mask dice: 0.555934
+assd dice: 7.249517
+./output/20220225-174320/iter_12899.ckpt
+mask dice: 0.516578
+assd dice: 6.743421
+./output/20220225-174320/iter_13199.ckpt
+mask dice: 0.401630
+assd dice: 10.671071
+./output/20220225-174320/iter_13499.ckpt
+mask dice: 0.393322
+assd dice: 10.989312
+./output/20220225-174320/iter_13799.ckpt
+mask dice: 0.613007
+assd dice: 4.828657
+./output/20220225-174320/iter_14099.ckpt
+mask dice: 0.607513
+assd dice: 4.570607
+./output/20220225-174320/iter_14399.ckpt
+mask dice: 0.562099
+assd dice: 5.454138
+./output/20220225-174320/iter_14699.ckpt
+mask dice: 0.312565
+assd dice: 15.906459
+./output/20220225-174320/iter_14999.ckpt
+mask dice: 0.487086
+assd dice: 11.391956
+./output/20220225-174320/iter_15299.ckpt
+mask dice: 0.433808
+assd dice: 10.801756
+./output/20220225-174320/iter_15599.ckpt
+mask dice: 0.514227
+assd dice: 6.856670
+./output/20220225-174320/iter_15899.ckpt
+mask dice: 0.345526
+assd dice: 15.512095
+./output/20220225-174320/iter_16199.ckpt
+mask dice: 0.574321
+assd dice: 6.651238
+./output/20220225-174320/iter_16499.ckpt
+mask dice: 0.466073
+assd dice: 6.358247
+./output/20220225-174320/iter_16799.ckpt
+mask dice: 0.595548
+assd dice: 5.863961
+./output/20220225-174320/iter_17099.ckpt
+mask dice: 0.291693
+assd dice: 16.594143
+./output/20220225-174320/iter_17399.ckpt
+mask dice: 0.485232
+assd dice: 5.663532
+./output/20220225-174320/iter_17699.ckpt
+mask dice: 0.495765
+assd dice: 9.622672
+./output/20220225-174320/iter_17999.ckpt
+mask dice: 0.578080
+assd dice: 5.764236
+./output/20220225-174320/iter_18299.ckpt
+mask dice: 0.412575
+assd dice: 11.713950
+./output/20220225-174320/iter_18599.ckpt
+mask dice: 0.575687
+assd dice: 6.440632

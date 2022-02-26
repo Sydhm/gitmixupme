@@ -95,9 +95,9 @@ class SIFA_pytorch(nn.Module):
         source = ['ct', 'CT']
         target = ['mr', 'MR']
         ################## test files
-        source_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +source[0]+ '.txt'
+        source_txt_path = './data/datalist/test_' +source[0]+ '.txt'
         source_test_list = read_lists(source_txt_path)
-        target_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +target[0]+ '.txt'
+        target_txt_path = './data/datalist/test_' +target[0]+ '.txt'
         target_test_list = read_lists(target_txt_path)
         data_size = [1, 256, 256]
         label_size = [1, 256, 256]
@@ -253,7 +253,7 @@ if __name__ == '__main__':
     with open('config_param.json') as config_file:
         config = json.load(config_file)
 
-    folder_name = '20220206-111333'
+    folder_name = '20220225-174320'
 
     with open('./output/'+folder_name+'/checkpoint_names', 'r') as fd:
         list = fd.readlines()

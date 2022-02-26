@@ -1,0 +1,15 @@
+Best model in folder: ./output/20220225-014420/iter_12299.ckpt
+mask dice: 0.593643
+assd dice: 5.106790
+Best model in folder: ./output/20220225-014420/iter_14999.ckpt
+mask dice: 0.635241
+assd dice: 6.374832
+Best model in folder: ./output/20220225-174320/iter_5999.ckpt
+mask dice: 0.615481
+assd dice: 5.791371
+Best model in folder: ./output/20220225-174320/iter_8999.ckpt
+mask dice: 0.620161
+assd dice: 5.411347
+Best model in folder: ./output/20220225-174320/iter_9599.ckpt
+mask dice: 0.617046
+assd dice: 5.048737

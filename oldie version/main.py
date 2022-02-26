@@ -3,6 +3,7 @@
 from datetime import datetime
 import json
 from pickle import bytes_types
+from threading import local
 import numpy as np
 import random
 import os
@@ -32,6 +33,8 @@ class SIFA_pytorch(nn.Module):
         # self._source_train_pth = config['source_train_pth']
         # self._target_train_pth = config['target_train_pth']
         self._train_pth = config['_train_pth']
+        self._source_val_pth = config['source_val_pth']
+        self._target_val_pth = config['target_val_pth']
         self._output_root_dir = config['output_root_dir']
         if not os.path.isdir(self._output_root_dir):
             os.makedirs(self._output_root_dir)
@@ -78,7 +81,7 @@ class SIFA_pytorch(nn.Module):
         init_weights(self.netD_A.cuda(), init_gain=0.02)
         self.netD_B = model.NLayerDiscriminator()
         init_weights(self.netD_B.cuda(), init_gain=0.02)
-        self.netD_B_aux = NLayerDc(1)
+        self.netD_B_aux = NLayerDc()
         init_weights(self.netD_B_aux.cuda(), init_gain=0.01)
         self.netD_P = model.NLayerDiscriminator(input_nc=5)   #### channels = 5
         init_weights(self.netD_P.cuda(), init_gain=0.02)
@@ -217,17 +220,17 @@ class SIFA_pytorch(nn.Module):
         DB_pred =  self.netD_B(self.fake_B) 
         g_a_ganloss = self.criterionGAN(DB_pred, True).mean()
 
-        pred_mixed_m, m = self.netD_B_aux(self.real_A*(1-self.bit_mask)+self.fake_B*self.bit_mask)  ### (1-m)real A + (m)fake B
+        pred_mixed_m = self.netD_B_aux(self.real_A*(1-self.bit_mask)+self.fake_B*self.bit_mask)  ### (1-m)real A + (m)fake B
         self.bit_mask_pred = pred_mixed_m.detach()
-        m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
+        # m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         # print(pred_mixed_m.size())
         local_loss = self.criterionGAN(pred_mixed_m, self.bit_mask88)
-        g_a_ganloss_m = local_loss.mean() + self.criterionGAN(m, m_gt).mean()
+        g_a_ganloss_m = local_loss.mean() #+ self.criterionGAN(m, m_gt).mean()
         # print(g_a_ganloss_m.size())
-        pred_mixed_notm, notm = self.netD_B_aux(self.real_A*self.bit_mask + self.fake_B*(1 -self.bit_mask))  ### (m)real A + (1-m)fake B
-        notm_gt = torch.mean((1-self.bit_mask88).reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
+        pred_mixed_notm = self.netD_B_aux(self.real_A*self.bit_mask + self.fake_B*(1 -self.bit_mask))  ### (m)real A + (1-m)fake B
+        # notm_gt = torch.mean((1-self.bit_mask88).reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         local_loss = self.criterionGAN(pred_mixed_notm, 1-self.bit_mask88)
-        g_a_ganloss_notm = (local_loss*(1 -self.bit_mask88)).sum()/(1 -self.bit_mask88).sum() + self.criterionGAN(notm, notm_gt).mean()
+        g_a_ganloss_notm = local_loss.mean() #+ self.criterionGAN(notm, notm_gt).mean()
         # print(self.criterionGAN(notm, 1-self.bit_mask88.sum()/64).size())
         g_a_ganloss += (g_a_ganloss_m + g_a_ganloss_notm)*0.1
 
@@ -245,16 +248,16 @@ class SIFA_pytorch(nn.Module):
         DA_pred, _ =  self.netD_A(self.fake_A) 
         g_b_ganloss = self.criterionGAN(DA_pred, True).mean()
 
-        pred_mixed_m, m = self.netD_B_aux(self.real_B*self.bit_mask+self.fake_A*(1-self.bit_mask))  ### (1-m)real A + (m)fake B
-        m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
+        pred_mixed_m = self.netD_B_aux(self.real_B*self.bit_mask+self.fake_A*(1-self.bit_mask))  ### (1-m)real A + (m)fake B
+        # m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         # print(m_gt.size(), 'm gt size')
         local_loss = self.criterionGAN(pred_mixed_m, self.bit_mask88)
-        g_b_ganloss_m = (local_loss*(1-self.bit_mask88)).sum()/(1-self.bit_mask88).sum()+self.criterionGAN(m, m_gt).mean()
+        g_b_ganloss_m = local_loss.mean() #+self.criterionGAN(m, m_gt).mean()
         ###### PSEUDO ------------------      A: 0,     fake A: assgined 0*     (weight)1
-        pred_mixed_notm, notm = self.netD_B_aux(self.real_B*(1-self.bit_mask) + self.fake_A*self.bit_mask)  ### (m)real A + (1-m)fake B
-        notm_gt = torch.mean((1-self.bit_mask88).reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
+        pred_mixed_notm = self.netD_B_aux(self.real_B*(1-self.bit_mask) + self.fake_A*self.bit_mask)  ### (m)real A + (1-m)fake B
+        # notm_gt = torch.mean((1-self.bit_mask88).reshape(self._batch_size,-1), dim=1, keepdim=True)   # 8, 1
         local_loss = self.criterionGAN(pred_mixed_notm, 1-self.bit_mask88)
-        g_b_ganloss_notm = (local_loss*self.bit_mask88).sum()/self.bit_mask88.sum() +self.criterionGAN(notm, notm_gt).mean()
+        g_b_ganloss_notm = local_loss.mean() #+self.criterionGAN(notm, notm_gt).mean()
         g_b_ganloss += (g_b_ganloss_m + g_b_ganloss_notm)*0.1
 
 
@@ -275,34 +278,40 @@ class SIFA_pytorch(nn.Module):
         return DB_loss
 
     def compute_d_b_aux_loss(self): # source -> 0, target -> 1 -------------------------- A:0, B:1
-        fake_B = self.fake_B_temp # on gpu as image stored is cuda.tensor, detached when pooled
+        # fake_B = self.fake_B_temp # on gpu as image stored is cuda.tensor, detached when pooled
 
-        amix = self.real_A*(1-self.bit_mask) + fake_B*self.bit_mask
-        pred_fakes, f = self.netD_B_aux(amix.detach())
-        amix_loss = self.criterionGAN(pred_fakes, False).mean() + self.criterionGAN(f, False).mean()
+        # pred_fake = self.netD_B(fake_B)
+        # fake_loss = self.criterionGAN(pred_fake, False).mean()
 
+        # fakes = self.real_A*(1-self.bit_mask) + self.fake_B*self.bit_mask
+        # pred_fakes, f = self.netD_B_aux(fakes.detach())
+        # fake_loss = self.criterionGAN(pred_fakes, False).mean()#+ self.criterionGAN(f, False).mean()
 
-        bmix = self.real_B*self.bit_mask + (self.fake_A.detach())*(1-self.bit_mask)   ## double adversarial
-        pred_reals, t = self.netD_B_aux(bmix.detach())
-        bmix_loss = self.criterionGAN(pred_reals, True).mean()+self.criterionGAN(t, True).mean()
+        # # fake_m = self.real_B*(1-self.bit_mask) + self.fake_B*self.bit_mask
+        # # pred_fake_m = self.netD_B_aux(fake_m.detach())
+        # # fake_m_loss = self.criterionGAN(pred_fake_m, (1-self.bit_mask)).mean()
 
-        pred_real, t = self.netD_B_aux(self.real_B)  # B is 1
+        # reals = self.real_B*self.bit_mask + self.fake_A*(1-self.bit_mask)   ## double adversarial
+        # pred_reals, t = self.netD_B_aux(reals.detach())
+        # real_loss = self.criterionGAN(pred_reals, True).mean()#+self.criterionGAN(t, True).mean()
+
+        pred_real = self.netD_B_aux(self.real_B)  # B is 1
         # pred_real_reject = self.netD_B_aux(self.fake_A)
-        real_loss = self.criterionGAN(pred_real, True).mean()+self.criterionGAN(t, True).mean()
+        real_loss = self.criterionGAN(pred_real, True).mean() #+self.criterionGAN(t, True).mean()
 
-        pred_false, f = self.netD_B_aux(self.real_A)  # A is 0
+        pred_false = self.netD_B_aux(self.real_A)  # A is 0
         # pred_false_reject = self.netD_B_aux(self.fake_B)
-        fake_loss = self.criterionGAN(pred_false, False).mean() + self.criterionGAN(f, False).mean()
+        fake_loss = self.criterionGAN(pred_false, False).mean() #+ self.criterionGAN(f, False).mean()
 
-        pred_m, m = self.netD_B_aux(self.real_B*self.bit_mask+(1-self.bit_mask)*self.real_A)
+        pred_m = self.netD_B_aux(self.real_B*self.bit_mask+(1-self.bit_mask)*self.real_A)
         m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)
-        m_loss = self.criterionGAN(pred_m, self.bit_mask88).mean() + self.criterionGAN(m, m_gt).mean()
+        m_loss = self.criterionGAN(pred_m, self.bit_mask88).mean() #+ self.criterionGAN(m, m_gt).mean()
 
         # pred_notm = self.netD_B_aux(self.real_A*self.bit_mask+(1-self.bit_mask)*self.real_B)
         # # m_gt = torch.mean(self.bit_mask88.reshape(self._batch_size,-1), dim=1, keepdim=True)
         # m_loss = self.criterionGAN(pred_notm, 1-self.bit_mask88).mean() #+ self.criterionGAN(m, m_gt).mean()
 
-        DB_aux_loss = (real_loss + fake_loss + m_loss + amix_loss + bmix_loss)*0.5
+        DB_aux_loss = (real_loss + fake_loss + m_loss)*0.5
         return DB_aux_loss
 
     def compute_d_p_loss(self):
@@ -566,9 +575,9 @@ class SIFA_pytorch(nn.Module):
         source = ['ct', 'CT']
         target = ['mr', 'MR']
         ################## test files
-        source_txt_path = './data/datalist/test_' +source[0]+ '.txt'
+        source_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +source[0]+ '.txt'
         source_test_list = read_lists(source_txt_path)
-        target_txt_path = './data/datalist/test_' +target[0]+ '.txt'
+        target_txt_path = '/home/xinwen/Downloads/SIFA-master/data/datalist/test_' +target[0]+ '.txt'
         target_test_list = read_lists(target_txt_path)
         data_size = [1, 256, 256]
         label_size = [1, 256, 256]
@@ -609,7 +618,7 @@ class SIFA_pytorch(nn.Module):
             # reset stuff
 
             for i, data in enumerate(train_loader):
-                # if i > 1:
+                # if i > 12:
                 #     break
                 total_iters += 1  # 0
                 self.set_input(data)
@@ -633,7 +642,7 @@ class SIFA_pytorch(nn.Module):
                             rgb_pred = rgb_pred = decode_segmap(prediction[image_i])
                             pic = [(self.real_A[image_i].repeat(3,1,1)+1)/2, (self.fake_B[image_i].repeat(3,1,1)+1)/2,
                                     rgb_pred, rgb_gt,
-                                    self.bit_mask[image_i].repeat(3,1,1), torch.nn.functional.interpolate(self.bit_mask_pred, [model.IMG_HEIGHT, model.IMG_WIDTH], mode='area')[image_i].repeat(3,1,1),
+                                    (self.bit_mask[image_i].repeat(3,1,1)+1)/2, (torch.nn.functional.interpolate(self.bit_mask_pred, [model.IMG_HEIGHT, model.IMG_WIDTH], mode='area')[image_i].repeat(3,1,1)+1)/2,
                                     (self.real_B[image_i].repeat(3,1,1)+1)/2] # C=3, H, W
                             rows.append(torch.cat(pic, 2)) # C=3, H, W*4
 
