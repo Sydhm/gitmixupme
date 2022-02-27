@@ -32,7 +32,7 @@ class SIFA_pytorch(nn.Module):
         current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
         # self._source_train_pth = config['source_train_pth']
         # self._target_train_pth = config['target_train_pth']
-        self._train_pth = '/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/abdom'
+        self._train_pth = './dataset/abdom'
         # self._source_val_pth = config['source_val_pth']
         # self._target_val_pth = config['target_val_pth']
         self._output_root_dir = config['output_root_dir']
@@ -156,7 +156,7 @@ class SIFA_pytorch(nn.Module):
             input (dict): include the data itself and its metadata information.
         The option 'direction' can be used to swap domain A and domain B.
         """
-        AtoB = self.direction == 'CT2MR'
+        AtoB = self.direction == 'MR2CT'
         self.real_A = input['A' if AtoB else 'B'].cuda()
         self.real_B = input['B' if AtoB else 'A'].cuda()
         self.image_paths = input['A_paths' if AtoB else 'B_paths']
@@ -552,7 +552,7 @@ class SIFA_pytorch(nn.Module):
     def eval_model(self):
         self.eval()
         # self.load_network(self.path)
-        testset = abdom_dataset('/home/xinwen/Desktop/Stage1-toggling/gitmixup/dataset/abdom', train=False)
+        testset = abdom_dataset('./dataset/abdom', train=False)
         test_loader = torch.utils.data.DataLoader(
             testset,
             batch_size=self._batch_size,
@@ -652,8 +652,8 @@ class SIFA_pytorch(nn.Module):
             # reset stuff
 
             for i, data in enumerate(train_loader):
-                # if i > 12:
-                #     break
+                if i > 1:
+                    break
                 total_iters += 1  # 0
                 self.set_input(data)
                 self.optimize_params()
