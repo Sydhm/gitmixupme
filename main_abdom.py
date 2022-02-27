@@ -156,7 +156,7 @@ class SIFA_pytorch(nn.Module):
             input (dict): include the data itself and its metadata information.
         The option 'direction' can be used to swap domain A and domain B.
         """
-        AtoB = self.direction == 'MR2CT'
+        AtoB = self.direction == 'CT2MR'
         self.real_A = input['A' if AtoB else 'B'].cuda()
         self.real_B = input['B' if AtoB else 'A'].cuda()
         self.image_paths = input['A_paths' if AtoB else 'B_paths']
