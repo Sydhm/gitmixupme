@@ -215,7 +215,7 @@ class SIFA_pytorch(nn.Module):
             print ('Spleen:%.1f(%.1f)' % (assd_mean[0], assd_std[0]))
             print ('Mean:%.1f' % np.mean(assd_mean))
 
-            if self.best_dice < dice_avg:
+            if np.mean(self.best_dice) < dice_avg:
                 self.best_dice = dice_mean
                 self.best_model = self.path
                 self.best_model_assd = assd_mean
